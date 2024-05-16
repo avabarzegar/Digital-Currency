@@ -1,0 +1,1347 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl" class="light">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="description" content="describe your website" />
+   <meta name="keywords" content="write keywords here" />
+   <meta name="author" content="name of author" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta name="color-scheme" content="light dark" />
+   <link rel="icon" type="image/png" href="./pictures/piche-logo.svg" />
+   <link rel="stylesheet" href="./Icon/fontawesome-free-6.0.0-web/fontawesome-free-6.0.0-web/css/all.min.css" />
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+   <link rel="stylesheet" type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+   <link rel="stylesheet" href="./css/style.css" />
+   <title>برتر پرداخت</title>
+</head>
+
+<body class="light">
+   <script>
+      const theme = localStorage.getItem('theme') || 'light';
+      document.body.className = theme;
+   </script>
+   <!-- navbar -->
+   <nav class="container-fluid navbar">
+      <div class="container">
+         <div class="social-media-icon">
+            <div class="div-contain-navbar-icon d-flex justify-content-center align-items-center">
+               <a href="#" class="link-icon-navbar twitter"><img class="img-social-media"
+                     src="./pictures/Vectortwitter.png" alt="twitter icon"></a>
+               <a href="#" class="me-3 link-icon-navbar telegram"><img class="img-social-media"
+                     src="./pictures/Vectortelegram.png" alt="telegram icon"></a>
+               <a href="https://instagram.com/bartarpardakht/" class="me-3 link-icon-navbar instagram"><img
+                     class="img-social-media" src="./pictures/Vectorinsta.svg" alt="instagram icon"></a>
+               <a href="#" class="me-3 link-icon-navbar whatsapp"><img class="img-social-media"
+                     src="./pictures/in-footer.svg" alt="whatsapp icon"></a>
+            </div>
+         </div>
+         <div class="contact-icon d-flex">
+            <a href="mailto:mailto:info@bartarpardakht.com"
+               class="email-contact d-flex align-items-center justify-content-center ms-3">
+               <span class="span-email">
+                  info@bartarpardakht.com
+               </span>
+               <div class="big-div-icons-navbar me-1">
+                  <div class="div-second-img-icon-navbar-email">
+
+                  </div>
+               </div>
+            </a>
+            <a href="tel:02191014767" class="phone-contact d-flex align-items-center justify-content-center">
+               <span class="span-number-phone">
+                  021-91014767
+               </span>
+               <div class="big-div-icons-navbar me-1">
+                  <div class="div-second-img-icon-navbar-phone">
+
+                  </div>
+               </div>
+            </a>
+         </div>
+      </div>
+   </nav>
+   <!-- /navbar -->
+
+   <!-- navbar-2 -->
+   <nav class="container-fluid navbar-2">
+      <div class="container d-flex navbar-2-container align-items-center justify-content-between">
+         <div class="d-flex align-items-center">
+            <a href="https://bartarpardakht.com/" class="div-logo-img">
+               <img src="./pictures/logo.png" alt="logo bartar pardakht" width="100%">
+            </a>
+
+            <div class="me-5">
+               <ul class="position-relative m-0 d-flex align-items-center pe-0">
+                  <li class="text-white li-navbar-1 li-navbar">
+                     <a href="./pages/digital-currency-page.html"
+                        class="div-mega-menu-navbar a-currency-page-navbar text-white">
+                        ارز دیجیتال
+                     </a>
+                  </li>
+                  <li class="text-white li-navbar li-navbar-2 me-5">
+                     <div class="div-mega-menu-navbar">
+                        خدمات ما
+                        <img src="./pictures/arrowdown.png" alt="arrowdown icon">
+                     </div>
+                     <ul class="position-absolute  ul-mega-menu-service">
+                        <li class="my-2"><a href="./pages/paypal.html">پی پال </a></li>
+                        <li class="my-2"><a href="./pages/internationalpayment.html">پرداخت بین المللی
+                           </a></li>
+                        <li class="my-2"><a href="./pages/perfectmoney.html">پرفکت مانی </a></li>
+                        <li class="my-2"> <a href="./pages/webmoney.html">وب مانی </a></li>
+                        <li class="my-2"><a href="./pages/giftcard.html">گیفت کارت</a></li>
+                     </ul>
+                  </li>
+                  <li class="text-white li-navbar  me-5">
+                     <a href="./pages/cashcurrency.html" class="a-navbar-2">نقد درآمد ارزی</a>
+                  </li>
+                  <li class="text-white li-navbar me-5">
+                     <a href="#" class="a-navbar-2">وبلاگ</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div class="d-flex justify-content-between align-items-center">
+            <div>
+               <a href="https://panel.bartarpardakht.com/login" class="btn-navbar-sign-in">ورود / ثبت نام</a>
+            </div>
+            <div id="theme-toggle" class="btn-toggle d-flex me-5 justify-content-between" onclick="toggledaynight()">
+               <div class="light-div-img">
+               </div>
+            </div>
+         </div>
+      </div>
+   </nav>
+   <!-- /navbar-2 -->
+
+   <!-- navbar-mobile -->
+   <nav class="container-fluid navbar-mobile">
+      <div class="container">
+         <div class="row justify-content-between align-items-center">
+            <div class="d-flex col-4">
+               <div class="sandwich-menu">
+                  <img src="./pictures/menu (1) 1.svg" alt="menu-in-mobile" width="100%">
+               </div>
+               <a href="https://bartarpardakht.com/" class="logo-navbar-phone me-3">
+                  <img src="./pictures/piche-logo.svg" alt="bp-logo-in-mobile" width="100%">
+               </a>
+            </div>
+            <div class="col-8 d-flex justify-content-end align-items-center">
+               <div id="theme-toggle-res" class="btn-toggle-phone d-flex ms-3 justify-content-end">
+                  <div class="light-div-res">
+
+                  </div>
+               </div>
+
+               <a href="https://panel.bartarpardakht.com/login" class="btn-navbar-sign-in-phone">ورود / ثبت نام</a>
+
+            </div>
+         </div>
+      </div>
+   </nav>
+
+
+   <div class="container-fluid res-menu-phone">
+      <div class="container py-0 mb-0">
+
+         <div class="img-logo-close-btn d-flex align-items-end justify-content-end">
+            <i class="fa fa-close text-white ms-3 close-res-menu"></i>
+         </div>
+         <ul class="ul-res-menu">
+            <li class="li-title-res-menu"><a href="./pages/digital-currency-page.html" class="li-title-res-menu">ارز
+                  دیجیتال</a></li>
+            <div class="accordion" id="accordionExample">
+               <div class="accordion-item acc-item-nav-phone-services">
+                  <h2 class="accordion-header" id="headingTwo">
+                     <button class="accordion-button collapsed acc-btn-nav-phone-services" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                        aria-controls="collapseTwo">
+                        خدمات ما
+                     </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse b-d" aria-labelledby="headingTwo"
+                     data-bs-parent="#accordionExample">
+                     <div class="accordion-body acc-body-nav-phone-services">
+                        <ul class="ul-res-menu ul-res-menu-services-acc">
+                           <li class="pe-3 mt-3"><a href="./pages/paypal.html">پی پال</a></li>
+                           <li class="pe-3 mt-3"><a href="./pages/internationalpayment.html">پرداخت بین
+                                 المللی</a>
+                           </li>
+                           <li class="pe-3 mt-3"><a href="./pages/perfectmoney.html">پرفکت مانی</a></li>
+                           <li class="pe-3 mt-3"><a href="./pages/webmoney.html">وب مانی</a></li>
+                           <li class="pe-3 mt-3"><a href="./pages/giftcard.html">گیفت کارت</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <li class="li-title-res-menu mt-0"><a href="./pages/cashcurrency.html"
+                  class="li-title-res-menu">نقد درآمد ارزی</a></li>
+            <li class="li-title-res-menu"><a href="#" class="li-title-res-menu">وبلاگ</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+   <!-- /navbar-mobile -->
+
+   <!-- header  -->
+
+   <header class="p-0 container-fluid header-container">
+      <div class="container-fluid header-bg">
+         <div class="container position-relative">
+            <div class="row header-bg-img">
+               <div class="col-lg-6">
+                  <div class="d-flex flex-row align-items-start">
+                     <div class="img-header-logo">
+                        <img src="./pictures/logo-vector.png" alt="logo-img" width="100%">
+                     </div>
+                     <p class="para-header-logo">سامانه دانش بنیان تبادل ارزهای دیجیتال</p>
+                  </div>
+                  <h1 class="header-text">بازار حرفه ای خرید و فروش ارز دیجیتال</h1>
+                  <div class="list-btn-container">
+                     <ul class="header-content-bg header-list">
+                        <li class="list-item-header">پرداخت هزینه امتحانات بین المللی</li>
+                        <li class="list-item-header">خرید از فروشگاه های بزرگ دنیا</li>
+                        <li class="list-item-header">خرید انواع گیفت کارت</li>
+                        <li class="list-item-header">پرداخت هزینه سفارت</li>
+                     </ul>
+                     <a href="https://panel.bartarpardakht.com/login" class="button header-btn">همین حالا ثبت نام کن</a>
+                  </div>
+               </div>
+               <div class="img-header-contaiener col-lg-6 d-flex align-items-center">
+                  <div class="img-header">
+                     <img src="./pictures/1.png" width="100%" alt="header-pic">
+                  </div>
+               </div>
+            </div>
+
+         </div>
+      </div>
+      <div class="container home-slider">
+         <a href="./pages/currencies.html" class="mx-xxl-3 mx-md-2 mx-sm-1 home-slide">
+            <div class="home-img-slide-container">
+               <div class="home-img-slide">
+                  <div class="home-img-slide-1 home-img-slide-all"></div>
+               </div>
+            </div>
+            <div class="d-flex flex-row justify-content-between">
+               <span>بیت کوین</span>
+               <span>Bitcoin - BTC</span>
+            </div>
+            <div class="home-slide-content">
+               <div class="d-flex flex-row justify-content-between">
+                  <span class="slide-content-sub">قیمت به تتر :</span>
+                  <span class="price-btc"></span>
+               </div>
+               <div class="d-flex flex-row justify-content-between">
+                  <span class="slide-content-sub">خرید(تومان) :</span>
+                  <span class="buy-btc toman-buy"></span>
+               </div>
+               <div class="d-flex flex-row justify-content-between">
+                  <span class="slide-content-sub">فروش(تومان) :</span>
+                  <span class="sell-btc toman-sell"></span>
+               </div>
+            </div>
+         </a>
+         <a href="./pages/currencies.html" class="mx-xxl-3 mx-md-2 mx-sm-1 home-slide">
+            <div class="home-img-slide-container">
+               <div class="home-img-slide">
+                  <div class="home-img-slide-2 home-img-slide-all"></div>
+               </div>
+            </div>
+            <div class="d-flex flex-row justify-content-between">
+               <span>اتریوم </span>
+               <span>Ethereum - ETH</span>
+            </div>
+            <div class="home-slide-content">
+               <div class="d-flex flex-row justify-content-between">
+                  <span class="slide-content-sub">قیمت به تتر :</span>
+                  <span class="price-eth"></span>
+               </div>
+               <div class="d-flex flex-row justify-content-between">
+                  <span class="slide-content-sub">خرید(تومان) :</span>
+                  <span class="buy-eth toman-buy"></span>
+               </div>
+               <div class="d-flex flex-row justify-content-between">
+                  <span class="slide-content-sub">فروش(تومان) :</span>
+                  <span class="sell-eth toman-sell"></span>
+               </div>
+            </div>
+         </a>
+         <a href="./pages/currencies.html" class="mx-xxl-3 mx-md-2 mx-sm-1 home-slide">
+            <div class="home-img-slide-container">
+               <div class="home-img-slide">
+                  <div class="home-img-slide-3 home-img-slide-all"></div>
+               </div>
+            </div>
+            <div class="d-flex flex-row justify-content-between">
+               <span>تتر </span>
+               <span>Tether - USDT</span>
+            </div>
+            <div class="home-slide-content">
+               <div class="d-flex flex-row justify-content-between">
+                  <span class="slide-content-sub">قیمت به تتر :</span>
+                  <span class="price-usdt"></span>
+               </div>
+               <div class="d-flex flex-row justify-content-between">
+                  <span class="slide-content-sub">خرید(تومان) :</span>
+                  <span class="buy-usdt toman-buy"></span>
+               </div>
+               <div class="d-flex flex-row justify-content-between">
+                  <span class="slide-content-sub">فروش(تومان) :</span>
+                  <span class="sell-usdt toman-sell"></span>
+               </div>
+            </div>
+         </a>
+         <a href="./pages/currencies.html" class="mx-xxl-3 mx-md-2 mx-sm-1 home-slide">
+            <div class="home-img-slide-container">
+               <div class="home-img-slide">
+                  <div class="home-img-slide-4 home-img-slide-all"></div>
+               </div>
+            </div>
+            <div class="d-flex flex-row justify-content-between">
+               <span>بایننس کوین</span>
+               <span>Binance Coin - BNB</span>
+            </div>
+            <div class="home-slide-content">
+               <div class="d-flex flex-row justify-content-between">
+                  <span class="slide-content-sub">قیمت به تتر :</span>
+                  <span class="price-bnb"></span>
+               </div>
+               <div class="d-flex flex-row justify-content-between">
+                  <span class="slide-content-sub">خرید(تومان) :</span>
+                  <span class="buy-bnb toman-buy"></span>
+               </div>
+               <div class="d-flex flex-row justify-content-between">
+                  <span class="slide-content-sub">فروش(تومان) :</span>
+                  <span class="sell-bnb toman-sell"></span>
+               </div>
+            </div>
+         </a>
+         <a href="./pages/currencies.html" class="mx-xxl-3 mx-md-2 mx-sm-1 home-slide">
+            <div class="home-img-slide-container">
+               <div class="home-img-slide">
+                  <div class="home-img-slide-5 home-img-slide-all"></div>
+               </div>
+            </div>
+            <div class="d-flex flex-row justify-content-between">
+               <span>یو اس دی کوین</span>
+               <span>USD Coin - USDC</span>
+            </div>
+            <div class="home-slide-content">
+               <div class="d-flex flex-row justify-content-between">
+                  <span class="slide-content-sub">قیمت به تتر :</span>
+                  <span class="price-usdc"></span>
+               </div>
+               <div class="d-flex flex-row justify-content-between">
+                  <span class="slide-content-sub">خرید(تومان) :</span>
+                  <span class="buy-usdc toman-buy"></span>
+               </div>
+               <div class="d-flex flex-row justify-content-between">
+                  <span class="slide-content-sub">فروش(تومان) :</span>
+                  <span class="sell-usdc toman-sell"></span>
+               </div>
+            </div>
+         </a>
+         <a href="./pages/currencies.html" class="mx-xxl-3 mx-md-2 mx-sm-1 home-slide">
+            <div class="home-img-slide-container">
+               <div class="home-img-slide">
+                  <div class="home-img-slide-6 home-img-slide-all"></div>
+               </div>
+            </div>
+            <div class="d-flex flex-row justify-content-between">
+               <span>کاردانو </span>
+               <span>Cardano - ADA</span>
+            </div>
+            <div class="home-slide-content">
+               <div class="d-flex flex-row justify-content-between">
+                  <span class="slide-content-sub">قیمت به تتر :</span>
+                  <span class="price-ada"></span>
+               </div>
+               <div class="d-flex flex-row justify-content-between">
+                  <span class="slide-content-sub">خرید(تومان) :</span>
+                  <span class="buy-ada toman-buy"></span>
+               </div>
+               <div class="d-flex flex-row justify-content-between">
+                  <span class="slide-content-sub">فروش(تومان) :</span>
+                  <span class="sell-ada toman-sell"></span>
+               </div>
+            </div>
+         </a>
+         <a href="./pages/currencies.html" class="mx-xxl-3 mx-md-2 mx-sm-1 home-slide">
+            <div class="home-img-slide-container">
+               <div class="home-img-slide">
+                  <div class="home-img-slide-7 home-img-slide-all"></div>
+               </div>
+            </div>
+            <div class="d-flex flex-row justify-content-between">
+               <span>ریپل </span>
+               <span>Ripple - XRP</span>
+            </div>
+            <div class="home-slide-content">
+               <div class="d-flex flex-row justify-content-between">
+                  <span class="slide-content-sub">قیمت به تتر :</span>
+                  <span class="price-xrp"></span>
+               </div>
+               <div class="d-flex flex-row justify-content-between">
+                  <span class="slide-content-sub">خرید(تومان) :</span>
+                  <span class="buy-xrp toman-buy"></span>
+               </div>
+               <div class="d-flex flex-row justify-content-between">
+                  <span class="slide-content-sub">فروش(تومان) :</span>
+                  <span class="sell-xrp toman-sell"></span>
+               </div>
+            </div>
+         </a>
+         <a href="./pages/currencies.html" class="mx-xxl-3 mx-md-2 mx-sm-1 home-slide">
+            <div class="home-img-slide-container">
+               <div class="home-img-slide">
+                  <div class="home-img-slide-8 home-img-slide-all"></div>
+               </div>
+            </div>
+            <div class="d-flex flex-row justify-content-between">
+               <span>ترا </span>
+               <span>Terra - LUNA</span>
+            </div>
+            <div class="home-slide-content">
+               <div class="d-flex flex-row justify-content-between">
+                  <span class="slide-content-sub">قیمت به تتر :</span>
+                  <span class="price-luna"></span>
+               </div>
+               <div class="d-flex flex-row justify-content-between">
+                  <span class="slide-content-sub">خرید(تومان) :</span>
+                  <span class="buy-luna toman-buy"></span>
+               </div>
+               <div class="d-flex flex-row justify-content-between">
+                  <span class="slide-content-sub">فروش(تومان) :</span>
+                  <span class="sell-luna toman-sell"></span>
+               </div>
+            </div>
+         </a>
+         <a href="./pages/currencies.html" class="mx-xxl-3 mx-md-2 mx-sm-1 home-slide">
+            <div class="home-img-slide-container">
+               <div class="home-img-slide">
+                  <div class="home-img-slide-9 home-img-slide-all"></div>
+               </div>
+            </div>
+            <div class="d-flex flex-row justify-content-between">
+               <span>سولانا </span>
+               <span>Solana - SOL</span>
+            </div>
+            <div class="home-slide-content">
+               <div class="d-flex flex-row justify-content-between">
+                  <span class="slide-content-sub">قیمت به تتر :</span>
+                  <span class="price-sol"></span>
+               </div>
+               <div class="d-flex flex-row justify-content-between">
+                  <span class="slide-content-sub">خرید(تومان) :</span>
+                  <span class="buy-sol toman-buy"></span>
+               </div>
+               <div class="d-flex flex-row justify-content-between">
+                  <span class="slide-content-sub">فروش(تومان) :</span>
+                  <span class="sell-sol toman-sell"></span>
+               </div>
+            </div>
+         </a>
+         <a href="./pages/currencies.html" class="mx-xxl-3 mx-md-2 mx-sm-1 home-slide">
+            <div class="home-img-slide-container">
+               <div class="home-img-slide">
+                  <div class="home-img-slide-10 home-img-slide-all"></div>
+               </div>
+            </div>
+            <div class="d-flex flex-row justify-content-between">
+               <span>پولکادات </span>
+               <span>Polkadot - DOT</span>
+            </div>
+            <div class="home-slide-content">
+               <div class="d-flex flex-row justify-content-between">
+                  <span class="slide-content-sub">قیمت به تتر :</span>
+                  <span class="price-dot"></span>
+               </div>
+               <div class="d-flex flex-row justify-content-between">
+                  <span class="slide-content-sub">خرید(تومان) :</span>
+                  <span class="buy-dot toman-buy"></span>
+               </div>
+               <div class="d-flex flex-row justify-content-between">
+                  <span class="slide-content-sub">فروش(تومان) :</span>
+                  <span class="sell-dot toman-sell"></span>
+               </div>
+            </div>
+         </a>
+         <a href="./pages/currencies.html" class="mx-xxl-3 mx-md-2 mx-sm-1 home-slide">
+            <div class="home-img-slide-container">
+               <div class="home-img-slide">
+                  <div class="home-img-slide-11 home-img-slide-all"></div>
+               </div>
+            </div>
+            <div class="d-flex flex-row justify-content-between">
+               <span>اولانچ </span>
+               <span>Avalanche - AVAX</span>
+            </div>
+            <div class="home-slide-content">
+               <div class="d-flex flex-row justify-content-between">
+                  <span class="slide-content-sub">قیمت به تتر :</span>
+                  <span class="price-avax"></span>
+               </div>
+               <div class="d-flex flex-row justify-content-between">
+                  <span class="slide-content-sub">خرید(تومان) :</span>
+                  <span class="buy-avax toman-buy"></span>
+               </div>
+               <div class="d-flex flex-row justify-content-between">
+                  <span class="slide-content-sub">فروش(تومان) :</span>
+                  <span class="sell-avax toman-sell"></span>
+               </div>
+            </div>
+         </a>
+      </div>
+      <div class="cool-mouse-parent">
+         <div class="cool-mouse-contaier">
+            <div id="cool-mouse" class="icon-scroll"></div>
+         </div>
+      </div>
+   </header>
+   <!-- /header  -->
+
+   <!-- service-bp -->
+   <div class="container-fluid">
+      <div class="container">
+         <div class="pars-of-service d-flex flex-column justify-content-center">
+            <div class="title-service justify-content-center align-items-center d-flex">
+               <div class="d-flex div-service-title-style">
+                  <span class="span-service-2"></span>
+
+               </div>
+               <p class="mb-0 p-title-service">خدمات برتر پرداخت</p>
+               <div class="d-flex div-service-title-style">
+                  <span class="span-service-2"></span>
+
+               </div>
+            </div>
+            <div>
+               <p class="text-center mb-0 second-par-service">تیم برتر پرداخت با سالها تجربه در کنار شماست ، با مشاوره
+                  رایگان سریع ترین و امن ترین مسیر پرداخت را انتخاب کنید.</p>
+            </div>
+         </div>
+         <div class="row services-pics">
+            <a href="./pages/digital-currency-page.html" class="col-6 col-lg-4 service-pics service-pic-1"><img src="./pictures/DC.png"
+                  alt="digital-currency-picture" width="100%">
+            </a>
+            <a href="./pages/internationalpayment.html" class="col-6 col-lg-4 service-pics service-pic-2"><img src="./pictures/ip.png"
+                  alt="international-payment" width="100%">
+            </a>
+            <a href="./pages/perfectmoney.html" class="col-6 col-lg-4 service-pics service-pic-3"><img src="./pictures/pm.png"
+                  alt="perfect-money-picture" width="100%">
+            </a>
+            <a href="./pages/paypal.html" class="col-6 col-lg-4 mt-5 service-pics service-pic-4">
+               <img src="./pictures/pp.png"
+                  alt="pay-pal-picture" width="100%">
+               </a>
+            <a href="./pages/giftcard.html" class="col-6 col-lg-4 mt-5 service-pics service-pic-5">
+               <img src="./pictures/gc.png"
+                  alt="gift-card-picture" width="100%">
+               </a>
+            <a href="./pages/webmoney.html" class="col-6 col-lg-4 mt-5 service-pics service-pic-6">
+               <img src="./pictures/wm.png"
+                  alt="web-money-picture" width="100%"></a>
+         </div>
+      </div>
+   </div>
+   <!-- /service-bp -->
+   <!-- benefits-bp  -->
+   <div class="container-fluid why-container-parent">
+      <div class="position-relative container d-flex justify-content-center">
+         <div class="why-bg-container">
+            <img src="./pictures/circle.png" class="circle-light" width="100%" alt="circle">
+            <img src="./pictures/DARK/circle-dark.png" class="circle-dark" width="100%" alt="circle-dark">
+         </div>
+         <div class="container why-us-benefit">
+            <div class="d-flex flex-column">
+               <div class="benefit-title title-service justify-content-center align-items-center d-flex">
+                  <div class="d-flex div-service-title-style">
+                     <span class="span-service-2"></span>
+                  </div>
+                  <p class="benefit-title-txt p-title-service">مزایای برتر پرداخت</p>
+                  <div class="d-flex div-service-title-style">
+                     <span class="span-service-2"></span>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="px-3 col-lg-6">
+                     <div class="d-flex flex-column mt-4">
+                        <div class="row bp-benifits">
+                           <div class="col-sm-4 benefit-img-container">
+                              <img src="./pictures/dc-ico.png" width="100%" alt="phone-bc">
+                           </div>
+                           <div class="col-sm-8 benefit-para-container">
+                              <span class="first-benefit-para">ارائه اتوماتیک و حرفه ای کلیه ارزهای موجود در صرافی
+                                 بایننس و صرافی کوینکس </span>
+                              <span class="second-benefit-para">
+                                 با پنل حرفه ای برتر پرداخت به راحتی ارز های ارائه شده در بایننس و کوینکس را خید و فروش
+                                 کنید
+                              </span>
+                           </div>
+                        </div>
+                        <div class="row bp-benifits">
+                           <div class="col-sm-4 benefit-img-container">
+                              <img src="./pictures/panle.png" width="100%" alt="panel">
+                           </div>
+                           <div class="col-sm-8 benefit-para-container">
+                              <span class="first-benefit-para">پنل کاربری پیشرفته </span>
+                              <span class="second-benefit-para">
+                                 خرید و فروش آنی ارز های دیجیتال در بستری امن و سریع ، با احراز هویت در سطوح مختلف به
+                                 راحتی بدون محدودیت خرید و فروش کنید
+                              </span>
+                           </div>
+                        </div>
+                        <div class="row bp-benifits">
+                           <div class="col-sm-4 benefit-img-container">
+                              <img src="./pictures/trade.png" width="100%" alt="trade">
+                           </div>
+                           <div class="col-sm-8 benefit-para-container">
+                              <span class="first-benefit-para"> خدمات وب مانی - پرفکت مانی</span>
+                              <span class="second-benefit-para"> خرید، فروش و شارژ حساب های وبمانی و پرفکت مانی به صورت
+                                 اتوماتیک و آنی</span>
+                           </div>
+                        </div>
+                        <div class="row bp-benifits">
+                           <div class="col-sm-4 benefit-img-container">
+                              <img src="./pictures/sp.png" width="100%" alt="support">
+                           </div>
+                           <div class="col-sm-8 benefit-para-container">
+                              <span class="first-benefit-para"> پشتیبانی آنلاین 24 ساعته</span>
+                              <span class="second-benefit-para">
+                                 امکان ارسال تیکت به صورت 24 ساعته و هفت روز هفته و پاسخ گویی در کمترین زمان توسط تیم
+                                 پشتیبانی برترپرداخت</span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-6  benefit-pic-container">
+                     <div class="benefit-pic">
+                        <img src="./pictures/mobile.svg" class="benefit-pic-1" width="95%" alt="BP-view">
+                        <img src="./pictures/why-mb.png" class="benefit-pic-2" width="100%" alt="BP-view">
+                        <!-- dark-mode  -->
+                        <img src="./pictures/mobile.svg" class="benefit-pic-3" width="95%" alt="BP-view">
+                        <img src="./pictures/DARK/why-mb-.png" class="benefit-pic-4" width="100%" alt="BP-view">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- /benefits-bp  -->
+   <!-- blog-bp -->
+   <div class="container-fluid c-f-blog">
+      <div class="bit-blog-img-div">
+
+      </div>
+      <div class="container position-relative">
+         <div id="arrow-green" class="arrow-img-div">
+
+         </div>
+
+         <div class="pars-of-service d-flex flex-column justify-content-center">
+            <div class="title-service justify-content-center align-items-center d-flex">
+               <div class="d-flex div-service-title-style">
+                  <span class="span-service-2"></span>
+               </div>
+               <p class="mb-0 p-title-service"> آخرین مقاله ها</p>
+               <div class="d-flex div-service-title-style">
+                  <span class="span-service-2"></span>
+               </div>
+            </div>
+         </div>
+         <div class="container big-div-blog-cards">
+            <div class="mx-md-3 mx-sm-1 blog-slides">
+               <div class="main-blog-img">
+                  <img src="./pictures/perfectmoney-charge.jpg" alt="blog-image" width="100%">
+               </div>
+               <div>
+                  <h4 class="h4-slider-blog">روش های شارژ حساب پرفکت مانی </h4>
+                  <p class="p-slider-blog ">پرفکت مانی یکی از سرویس های پرداخت های بینالمللی است که از قضا
+                     برای ایرانیان نیز تحریم نشده است، به همین دلیل این سرویس در ایران محبوبیت بالایی دارد.
+
+                  </p>
+                  <div class="d-flex justify-content-between">
+                     <div class="d-flex justify-content-center align-items-center">
+                        <div class="ms-1">
+                           <img src="./pictures/akar-icons_clock.png" alt="clock-image" width="100%">
+                        </div>
+                        <span class="span-time-post">45 دقیقه قبل</span>
+                     </div>
+                     <a href="#" class="d-flex align-items-center">
+                        <span class="span-blog-slider-see">مشاهده</span>
+                        <div class="blog-see-img">
+                           <img src="./pictures/yellow-arrow-slider-blog.png" alt="arrow-yellow-in-blog" class="me-1"
+                              width="100%">
+                        </div>
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div class="mx-md-3 mx-sm-1 blog-slides">
+               <div class="main-blog-img">
+                  <img src="./pictures/voucher.png" alt="blog-image" width="100%">
+               </div>
+               <div>
+                  <h4 class="h4-slider-blog">ووچر پرفکت مانی چیست ؟ </h4>
+                  <p class="p-slider-blog ">ووچر پرفکت مانی یکی از روش های پر طرفدار پرداخت های بین المللی
+                     در سیستم پرفکت مانی میباشد که انتقال وجه معاملات را بسیار آسان میکند.
+
+                  </p>
+                  <div class="d-flex justify-content-between">
+                     <div class="d-flex justify-content-center align-items-center">
+                        <div class="ms-1">
+                           <img src="./pictures/akar-icons_clock.png" alt="blog-image" width="100%">
+                        </div>
+                        <span class="span-time-post">45 دقیقه قبل</span>
+                     </div>
+                     <a href="#" class="d-flex align-items-center">
+                        <span class="span-blog-slider-see">مشاهده</span>
+                        <div class="blog-see-img">
+                           <img src="./pictures/yellow-arrow-slider-blog.png" alt="arrow-yellow-in-blog" class="me-1"
+                              width="100%">
+                        </div>
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div class="mx-md-3 mx-sm-1 blog-slides">
+               <div class="main-blog-img">
+                  <img src="./pictures/web3.jpg" alt="blog-image" width="100%">
+               </div>
+               <div>
+                  <h4 class="h4-slider-blog"> دنیای WEB3</h4>
+                  <p class="p-slider-blog ">چشمان خود را ببندید نوع پیشرفته تری از دنیای اینترنت را تجسم کنید.
+                     که درک عمیقی از اطلاعات پیرامون شما دارد.
+                     در این فضا محتوا مطابق با آن چیزیست که به دنبالش بودید.
+                  </p>
+                  <div class="d-flex justify-content-between">
+                     <div class="d-flex justify-content-center align-items-center">
+                        <div class="ms-1">
+                           <img src="./pictures/akar-icons_clock.png" alt="clock-image" width="100%">
+                        </div>
+                        <span class="span-time-post">45 دقیقه قبل</span>
+                     </div>
+                     <a href="#" class="d-flex align-items-center">
+                        <span class="span-blog-slider-see">مشاهده</span>
+                        <div class="blog-see-img">
+                           <img src="./pictures/yellow-arrow-slider-blog.png" alt="arrow-yellow-in-blog" class="me-1"
+                              width="100%">
+                        </div>
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div class="mx-md-3 mx-sm-1 blog-slides">
+               <div class="main-blog-img">
+                  <img src="./pictures/nft.jpg" alt="blog-image" width="100%">
+               </div>
+               <div>
+                  <h4 class="h4-slider-blog">NFT و کاربرد آن </h4>
+                  <p class="p-slider-blog ">
+                     توکن های غیر قابل تعویض یا NFT ها از جمله دارایی های رمز نگاری شده به حساب می آیند که بر بستر
+                     پلاکچین ایجاد شده اند
+                     اما چرا به آن ها غیر قابل تعویض میگویند؟
+                  </p>
+                  <div class="d-flex justify-content-between">
+                     <div class="d-flex justify-content-center align-items-center">
+                        <div class="ms-1">
+                           <img src="./pictures/akar-icons_clock.png" alt="clock-image" width="100%">
+                        </div>
+                        <span class="span-time-post">45 دقیقه قبل</span>
+                     </div>
+                     <a href="#" class="d-flex align-items-center">
+                        <span class="span-blog-slider-see">مشاهده</span>
+                        <div class="blog-see-img">
+                           <img src="./pictures/yellow-arrow-slider-blog.png" alt="arrow-yellow-in-blog" class="me-1"
+                              width="100%">
+                        </div>
+                     </a>
+                  </div>
+               </div>
+            </div>
+            <div class="mx-md-3 mx-sm-1 blog-slides">
+               <div class="main-blog-img">
+                  <img src="./pictures/webmoney-charge.jpg" alt="blog-image" width="100%">
+               </div>
+               <div>
+                  <h4 class="h4-slider-blog">شارژ حساب وب مانی </h4>
+                  <p class="p-slider-blog">
+                     اگر صاحب حساب وب مانی هستید و یا میخواهید مبلغی را به حساب شخص دیگر انتقال دهید
+                     باید حساب خود را شارژ کنید.
+                     برای این کار روش های مختلفی وجود دارد.
+
+                  </p>
+                  <div class="d-flex justify-content-between">
+                     <div class="d-flex justify-content-center align-items-center">
+                        <div class="ms-1">
+                           <img src="./pictures/akar-icons_clock.png" alt="clock-image" width="100%">
+                        </div>
+                        <span class="span-time-post">45 دقیقه قبل</span>
+                     </div>
+                     <a href="#" class="d-flex align-items-center">
+                        <span class="span-blog-slider-see">مشاهده</span>
+                        <div class="blog-see-img">
+                           <img src="./pictures/yellow-arrow-slider-blog.png" alt="arrow-yellow-in-blog" class="me-1"
+                              width="100%">
+                        </div>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <a href="https://bartarpardakht.com/blog/" class="position-absolute a-more-blog-slider">بیشتر... </a>
+      </div>
+
+   </div>
+   <!-- /blog-bp -->
+   <!-- user-comments  -->
+   <div class="container-fluid my-5 d-flex flex-column">
+      <div class="container d-flex justify-content-center">
+         <div class="benefit-title title-service justify-content-center align-items-center d-flex">
+            <div class="d-flex div-service-title-style">
+               <span class="span-service-2"></span>
+            </div>
+            <p class="user-title p-title-service">نظرات کاربران ما</p>
+            <div class="d-flex div-service-title-style">
+               <span class="span-service-2"></span>
+            </div>
+         </div>
+      </div>
+      <div class="container-fluid user-comment-container">
+         <div class="container user-comment-slider">
+            <div class="mx-xl-4 mx-lg-3 mx-md-2 comment-slide">
+               <div class="user-img-slide-container">
+                  <div class="user-img-slide">
+                     <img src="./pictures/comment-ico.png" width="100%" alt="bitcoin">
+                  </div>
+               </div>
+               <div class="comment-first-section">
+                  <p>سینا کارگر</p>
+                  <div class="quote"><img src="./pictures/quote-left-solid 2.svg" height="100%" width="100%"
+                        alt="quote"></div>
+               </div>
+               <div class="comment-slide-content">
+                  <p> پنل خرید و فروش ارز های دیجیتال واقعا حرفه ای و تعداد ارز هایی که ارائه میشه عالیه
+                     تمام خرید ها رو همون موقع به حسابم انتقال داد.سرعت پنل خیلی خوبه.
+                  </p>
+               </div>
+            </div>
+            <div class="mx-xl-4 mx-lg-3 mx-md-2 comment-slide">
+               <div class="user-img-slide-container">
+                  <div class="user-img-slide">
+                     <img src="./pictures/comment-ico.png" width="100%" alt="bitcoin">
+                  </div>
+               </div>
+               <div class="comment-first-section">
+                  <p>فاطمه برزگر</p>
+                  <div class="quote"><img src="./pictures/quote-left-solid 2.svg" height="100%" width="100%"
+                        alt="quote"></div>
+               </div>
+               <div class="comment-slide-content">
+                  <p>شارژ حساب وب مانی به صورت آنی انجام شد که این موضوع خیلی جالب بود.
+                     توی سایت های دیگه هروقت این کار رو انجام میدادم حداقل 48 ساعت طول میکشید.
+                  </p>
+               </div>
+            </div>
+            <div class="mx-xl-4 mx-lg-3 mx-md-2 comment-slide">
+               <div class="user-img-slide-container">
+                  <div class="user-img-slide">
+                     <img src="./pictures/comment-ico.png" width="100%" alt="bitcoin">
+                  </div>
+               </div>
+               <div class="comment-first-section">
+                  <p>علی رضایی</p>
+                  <div class="quote">
+                     <img src="./pictures/quote-left-solid 2.svg" height="100%" width="100%" alt="quote">
+                  </div>
+               </div>
+               <div class="comment-slide-content">
+                  <p>
+                     قیمت ووچر پرفکت مانی سایتتون خیلی خوب بود .
+                     چند باری که خرید داشتم واقعا راضی بودم هم از سرعت سایتتون و هم از قیمت ها
+                     جالب بود که بلافاصله انجام شد .
+                  </p>
+               </div>
+            </div>
+            <div class="mx-xl-4 mx-lg-3 mx-md-2 comment-slide">
+               <div class="user-img-slide-container">
+                  <div class="user-img-slide">
+                     <img src="./pictures/comment-ico.png" width="100%" alt="bitcoin">
+                  </div>
+               </div>
+               <div class="comment-first-section">
+                  <p>محمد علی براتی</p>
+                  <div class="quote">
+                     <img src="./pictures/quote-left-solid 2.svg" height="100%" width="100%" alt="quote">
+                  </div>
+               </div>
+               <div class="comment-slide-content">
+                  <p>من فکر میکردم احراز هویت خیلی طول بکشه ولی خیلی سریع انجام شد ، توی قسمت هایی که مشکل داشتم
+                     پشتیبانی خیلی سریع
+                     راهنمایی کرد .
+                  </p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+   <!-- footer-bp -->
+   <footer class="container-fluid">
+      <div class="logo-footer-container">
+         <div class="logo-footer box-logo-footer">
+            <img src="./pictures/piche-logo.svg" alt="logo-footer" width="100%">
+         </div>
+      </div>
+      <div class="footer-container-fluid container">
+         <div class="row social-links-container d-flex align-items-center justify-content-evenly py-4">
+            <div class="col-sm-5 links-footer d-flex align-items-center ">
+               <a href="https//bartarpardakht.com/" class="home-footer-link single-footer-link">خانه</a>
+               <a href="https://bartarpardakht.com/blog/" class="single-footer-link">وبلاگ</a>
+               <a href="./pages/contact.html" class="single-footer-link">تماس با ما</a>
+               <a href="https://bartarpardakht.com/terms-of-service" class="single-footer-link">قوانین مقررات</a>
+               <a href="./pages/faq.html" class="single-footer-link">سوالات متداول</a>
+            </div>
+
+            <div class="col-sm-5 social-media ms-4 d-flex align-items-center">
+               <a href="#" class="social-media-icon-footer telegram-footer-con">
+                  <div class="telegram-footer"></div>
+               </a>
+               <a href="https://instagram.com/bartarpardakht/" class="social-media-icon-footer">
+                  <div class="instagram-footer social-single-icons"></div>
+               </a>
+               <a href="#" class="social-media-icon-footer">
+                  <div class="twitter-footer"></div>
+               </a>
+               <a href="#" class="social-media-icon-footer">
+                  <div class="linkedin-footer social-single-icons"></div>
+               </a>
+               <a href="#" class="social-media-icon-footer">
+                  <div class="facebook-footer"></div>
+               </a>
+            </div>
+         </div>
+      </div>
+      <div class="container-middle-footer container-fluid py-5 position-relative">
+         <div class="container mb-3 pb-5">
+            <div class="row">
+               <div class="col-xl-3 ps-xl-4">
+                  <div class="col par-footer-1">
+                     <span class="span-about-us-footer">درباره ما</span>
+                     <p class="p-about-us-footer">برتر پرداخت با همکاری تیمی متشکل از متخصصین وطن عزیزمان ایران با
+                        عبور
+                        از فراز و نشیب های فراوان
+                        ،
+                        بستری امن و سریع را برای پرداخت های بین المللی شما عزیزان فراهم اورده اند . امیدواریم بتوانیم
+                        در
+                        این راه قدمی کوچک در جهت آسودگی خاطر شما عزیزان برداریم.</p>
+                  </div>
+                  <div class="par-footer-2">
+                     <a href="https://bartarpardakht.com/terms-of-service" class="par-footer-2-container">
+                        <div class="col-2 footer-coin-img">
+                           <img src="./pictures/law-logo.png" alt="footer-coin-image" width="100%">
+                        </div>
+                        <div class="col-10 pe-3">
+                           <span class="span-why-buy-bit-footer">قوانین و مقررات خدمات </span>
+                           <p class="p-why-buy-bit-footer">قوانین و مقررات برترپرداخت براساس ماده ۱۰ قانون مدنی، و با
+                              تابعیت از کلیه قوانین و مقررات ... 
+
+
+                           </p>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+               <div class="col-xl-6 footer-links">
+                  <div class="footer-links-container row">
+                     <div class="col-4 p-0">
+                        <span class="span-footer-links">خدمات ما</span>
+                        <a href="./pages/paypal.html"
+                           class="d-flex justify-content-between test align-items-center py-3">
+                           <span>پی پال</span>
+                           <div class="ms-3">
+                              <img src="./pictures/arrow.svg" class="arrow-left-yellow" alt="arrow-left-yellow"
+                                 width="100%">
+                              <img src="./pictures/svg/Vector-arrow-left.svg" class="arrow-left-gray" width="100%"
+                                 alt="arrow-left-gray">
+                           </div>
+                        </a>
+                        <a href="./pages/webmoney.html"
+                           class="d-flex justify-content-between test align-items-center py-3">
+                           <span>وب مانی</span>
+                           <div class="ms-3">
+                              <img src="./pictures/arrow.svg" class="arrow-left-yellow" alt="arrow-left-yellow"
+                                 width="100%">
+                              <img src="./pictures/svg/Vector-arrow-left.svg" class="arrow-left-gray" width="100%"
+                                 alt="arrow-left-gray">
+                           </div>
+                        </a>
+                        <a href="./pages/perfectmoney.html"
+                           class="d-flex justify-content-between test align-items-center py-3">
+                           <span> پرفکت مانی</span>
+                           <div class="ms-3">
+                              <img src="./pictures/arrow.svg" class="arrow-left-yellow" alt="arrow-left-yellow"
+                                 width="100%">
+                              <img src="./pictures/svg/Vector-arrow-left.svg" class="arrow-left-gray" width="100%"
+                                 alt="arrow-left-gray">
+                           </div>
+                        </a>
+                        <a href="./pages/digital-currency-page.html"
+                           class="d-flex justify-content-between test align-items-center py-3">
+                           <span> ارز دیجیتال</span>
+                           <div class="ms-3">
+                              <img src="./pictures/arrow.svg" class="arrow-left-yellow" alt="arrow-left-yellow"
+                                 width="100%">
+                              <img src="./pictures/svg/Vector-arrow-left.svg" class="arrow-left-gray" width="100%"
+                                 alt="arrow-left-gray">
+                           </div>
+                        </a>
+                        <a href="./pages/visamaster.html"
+                           class="d-flex justify-content-between test align-items-center py-3">
+                           <span> ویزا و مستر</span>
+                           <div class="ms-3">
+                              <img src="./pictures/arrow.svg" class="arrow-left-yellow" alt="arrow-left-yellow"
+                                 width="100%">
+                              <img src="./pictures/svg/Vector-arrow-left.svg" class="arrow-left-gray" width="100%"
+                                 alt="arrow-left-gray">
+                           </div>
+                        </a>
+                        <a href="./pages/cashcurrency.html"
+                           class="d-flex justify-content-between test align-items-center py-3">
+                           <span>نقد درآمد ارزی </span>
+                           <div class="ms-3">
+                              <img src="./pictures/arrow.svg" class="arrow-left-yellow" alt="arrow-left-yellow"
+                                 width="100%">
+                              <img src="./pictures/svg/Vector-arrow-left.svg" class="arrow-left-gray" width="100%"
+                                 alt="arrow-left-gray">
+                           </div>
+                        </a>
+                     </div>
+                     <div class="col-4 p-0">
+                        <span class="span-footer-links"> ارز دیجیتال</span>
+                        <a href="https://panel.bartarpardakht.com/login"
+                           class="d-flex justify-content-between test align-items-center py-3">
+                           <span> خرید بیت کوین</span>
+                           <div class="ms-3">
+                              <img src="./pictures/arrow.svg" class="arrow-left-yellow" alt="arrow-left-yellow"
+                                 width="100%">
+                              <img src="./pictures/svg/Vector-arrow-left.svg" class="arrow-left-gray" width="100%"
+                                 alt="arrow-left-gray">
+                           </div>
+                        </a>
+                        <a href="https://panel.bartarpardakht.com/login"
+                           class="d-flex justify-content-between test align-items-center py-3">
+                           <span> خرید اتریوم</span>
+                           <div class="ms-3">
+                              <img src="./pictures/arrow.svg" class="arrow-left-yellow" alt="arrow-left-yellow"
+                                 width="100%">
+                              <img src="./pictures/svg/Vector-arrow-left.svg" class="arrow-left-gray" width="100%"
+                                 alt="arrow-left-gray">
+                           </div>
+                        </a>
+                        <a href="https://panel.bartarpardakht.com/login"
+                           class="d-flex justify-content-between test align-items-center py-3">
+                           <span> خرید تتر</span>
+                           <div class="ms-3">
+                              <img src="./pictures/arrow.svg" class="arrow-left-yellow" alt="arrow-left-yellow"
+                                 width="100%">
+                              <img src="./pictures/svg/Vector-arrow-left.svg" class="arrow-left-gray" width="100%"
+                                 alt="arrow-left-gray">
+                           </div>
+                        </a>
+                        <a href="https://panel.bartarpardakht.com/login"
+                           class="d-flex justify-content-between test align-items-center py-3">
+                           <span> خرید شیبا</span>
+                           <div class="ms-3">
+                              <img src="./pictures/arrow.svg" class="arrow-left-yellow" alt="arrow-left-yellow"
+                                 width="100%">
+                              <img src="./pictures/svg/Vector-arrow-left.svg" class="arrow-left-gray" width="100%"
+                                 alt="arrow-left-gray">
+                           </div>
+                        </a>
+                        <a href="https://panel.bartarpardakht.com/login"
+                           class="d-flex justify-content-between test align-items-center py-3">
+                           <span> خرید ریپل</span>
+                           <div class="ms-3">
+                              <img src="./pictures/arrow.svg" class="arrow-left-yellow" alt="arrow-left-yellow"
+                                 width="100%">
+                              <img src="./pictures/svg/Vector-arrow-left.svg" class="arrow-left-gray" width="100%"
+                                 alt="arrow-left-gray">
+                           </div>
+                        </a>
+                        <a href="https://panel.bartarpardakht.com/login"
+                           class="d-flex justify-content-between test align-items-center py-3">
+                           <span> خرید سولانا</span>
+                           <div class="ms-3">
+                              <img src="./pictures/arrow.svg" class="arrow-left-yellow" alt="arrow-left-yellow"
+                                 width="100%">
+                              <img src="./pictures/svg/Vector-arrow-left.svg" class="arrow-left-gray" width="100%"
+                                 alt="arrow-left-gray">
+                           </div>
+                        </a>
+                     </div>
+                     <div class="col-4 p-0">
+                        <span class="span-footer-links"> خرید انواع گیفت کارت</span>
+                        <a href="https://panel.bartarpardakht.com/login"
+                           class="d-flex justify-content-between test align-items-center py-3">
+                           <span>گیفت کارت آمازون</span>
+                           <div>
+                              <img src="./pictures/arrow.svg" class="arrow-left-yellow" alt="arrow-left-yellow"
+                                 width="100%">
+                              <img src="./pictures/svg/Vector-arrow-left.svg" class="arrow-left-gray" width="100%"
+                                 alt="arrow-left-gray">
+                           </div>
+                        </a>
+                        <a href="https://panel.bartarpardakht.com/login"
+                           class="d-flex justify-content-between test align-items-center py-3">
+                           <span>گیفت کارت پلی استیشن </span>
+                           <div>
+                              <img src="./pictures/arrow.svg" class="arrow-left-yellow" alt="arrow-left-yellow"
+                                 width="100%">
+                              <img src="./pictures/svg/Vector-arrow-left.svg" class="arrow-left-gray" width="100%"
+                                 alt="arrow-left-gray">
+                           </div>
+                        </a>
+                        <a href="https://panel.bartarpardakht.com/login"
+                           class="d-flex justify-content-between test align-items-center py-3">
+                           <span>گیفت کارت ایکس باکس </span>
+                           <div>
+                              <img src="./pictures/arrow.svg" class="arrow-left-yellow" alt="arrow-left-yellow"
+                                 width="100%">
+                              <img src="./pictures/svg/Vector-arrow-left.svg" class="arrow-left-gray" width="100%"
+                                 alt="arrow-left-gray">
+                           </div>
+                        </a>
+                        <a href="https://panel.bartarpardakht.com/login"
+                           class="d-flex justify-content-between test align-items-center py-3">
+                           <span> گیفت کارت آیتیونز</span>
+                           <div>
+                              <img src="./pictures/arrow.svg" class="arrow-left-yellow" alt="arrow-left-yellow"
+                                 width="100%">
+                              <img src="./pictures/svg/Vector-arrow-left.svg" class="arrow-left-gray" width="100%"
+                                 alt="arrow-left-gray">
+                           </div>
+                        </a>
+                        <a href="https://panel.bartarpardakht.com/login"
+                           class="d-flex justify-content-between test align-items-center py-3">
+                           <span>گیفت کارت گوگل پلی </span>
+                           <div>
+                              <img src="./pictures/arrow.svg" class="arrow-left-yellow" alt="arrow-left-yellow"
+                                 width="100%">
+                              <img src="./pictures/svg/Vector-arrow-left.svg" class="arrow-left-gray" width="100%"
+                                 alt="arrow-left-gray">
+                           </div>
+                        </a>
+                        <a href="https://panel.bartarpardakht.com/login"
+                           class="d-flex justify-content-between test align-items-center py-3">
+                           <span> گیفت کارت اسپاتیفای</span>
+                           <div>
+                              <img src="./pictures/arrow.svg" class="arrow-left-yellow" alt="arrow-left-yellow"
+                                 width="100%">
+                              <img src="./pictures/svg/Vector-arrow-left.svg" class="arrow-left-gray" width="100%"
+                                 alt="arrow-left-gray">
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="footer-accordion accordion" id="footerAccordionId">
+                     <div class="footer-accordioan-item accordion-item">
+                        <h2 id="headingOne">
+                           <button class="accordion-footer-btn accordion-button collapsed" type="button"
+                              data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
+                              aria-controls="collapseOne">
+                              خدمات ما
+                           </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                           data-bs-parent="#footerAccordionId">
+                           <div class="footer-accordion-body accordion-body">
+                              <ul class="footer-accordion-body-list pe-0">
+                                 <li>
+                                    <a href="./pages/paypal.html" class="footer-accordion-list-item"> پی
+                                       پال </a>
+                                 </li>
+                                 <li>
+                                    <a href="./pages/webmoney.html" class="footer-accordion-list-item"> وب
+                                       مانی</a>
+                                 </li>
+                                 <li>
+                                    <a href="./pages/perfectmoney.html"
+                                       class="footer-accordion-list-item"> پرفکت مانی</a>
+                                 </li>
+                                 <li>
+                                    <a href="./pages/digital-currency-page.html"
+                                       class="footer-accordion-list-item"> ارز دیجیتال</a>
+                                 </li>
+                                 <li>
+                                    <a href="./pages/visamaster.html" class="footer-accordion-list-item">
+                                       ویزا مستر</a>
+                                 </li>
+                                 <li>
+                                    <a href="./pages/cashcurrency.html"
+                                       class="footer-accordion-list-item"> نقد درآمد ارزی</a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="footer-accordioan-item accordion-item">
+                        <h2 id="headingTwo">
+                           <button class="accordion-footer-btn accordion-button collapsed" type="button"
+                              data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                              aria-controls="collapseTwo">
+                              ارز دیجیتال
+                           </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                           data-bs-parent="#footerAccordionId">
+                           <div class="footer-accordion-body accordion-body">
+                              <ul class="footer-accordion-body-list pe-0">
+                                 <li>
+                                    <a href="https://panel.bartarpardakht.com/login" class="footer-accordion-list-item">
+                                       خرید بیت کوین</a>
+                                 </li>
+                                 <li>
+                                    <a href="https://panel.bartarpardakht.com/login" class="footer-accordion-list-item">
+                                       خرید اتریوم</a>
+                                 </li>
+                                 <li>
+                                    <a href="https://panel.bartarpardakht.com/login" class="footer-accordion-list-item">
+                                       خرید تتر</a>
+                                 </li>
+                                 <li>
+                                    <a href="https://panel.bartarpardakht.com/login" class="footer-accordion-list-item">
+                                       خرید شیبا</a>
+                                 </li>
+                                 <li>
+                                    <a href="https://panel.bartarpardakht.com/login" class="footer-accordion-list-item">
+                                       خرید ریپل</a>
+                                 </li>
+                                 <li>
+                                    <a href="https://panel.bartarpardakht.com/login" class="footer-accordion-list-item">
+                                       خرید سولانا</a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="footer-accordioan-item accordion-item">
+                        <h2 id="headingThree">
+                           <button class="accordion-footer-btn accordion-button collapsed" type="button"
+                              data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                              aria-controls="collapseThree">
+                              خرید انواع گیفت کارت
+                           </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                           data-bs-parent="#footerAccordionId">
+                           <div class="footer-accordion-body accordion-body">
+                              <ul class="footer-accordion-body-list pe-0">
+                                 <li>
+                                    <a href="https://panel.bartarpardakht.com/login" class="footer-accordion-list-item">
+                                       گیفت کارت آمازون</a>
+                                 </li>
+                                 <li>
+                                    <a href="https://panel.bartarpardakht.com/login" class="footer-accordion-list-item">
+                                       گیفت کارت پلی استیشن</a>
+                                 </li>
+                                 <li>
+                                    <a href="https://panel.bartarpardakht.com/login" class="footer-accordion-list-item">
+                                       گیفت کارت ایکس باکس</a>
+                                 </li>
+                                 <li>
+                                    <a href="https://panel.bartarpardakht.com/login" class="footer-accordion-list-item">
+                                       گیفت کارت آیتیونز</a>
+                                 </li>
+                                 <li>
+                                    <a href="https://panel.bartarpardakht.com/login" class="footer-accordion-list-item">
+                                       گیفت کارت گوگل پلی</a>
+                                 </li>
+                                 <li>
+                                    <a href="https://panel.bartarpardakht.com/login" class="footer-accordion-list-item">
+                                       گیفت کارت اسپاتیفای</a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-3 footer-contact">
+                  <div class="div-contact-footer-part1">
+                     <div>
+                        <span class="m-0 span-contact-us-footer span-footer-links">
+                           ارتباط با ما
+                        </span>
+                     </div>
+                     <div class="d-flex my-3 align-items-center">
+                        <div class="address-footer-icon">
+                        </div>
+                        <span class="pe-3 span-addres-footer">شیراز،معالی آباد،ساختمان یونیک،دفتر مرکزی برتر
+                           پرداخت</span>
+                     </div>
+                     <div class="d-flex my-3 align-items-center">
+                        <div class="email-footer-icon">
+                        </div>
+                        <div>
+
+                           <a href="mailto:mailto:info@bartarpardakht.com" class="pe-3 email-footer">info@bartarpardakht.com</a>
+                        </div>
+                     </div>
+
+                     <div class="d-flex my-3 align-items-center">
+                        <div class="tel-footer-icon">
+                        </div>
+                        <span class="pe-3 number-phone-footer">021-91014767 </span>
+                     </div>
+                  </div>
+                  <div class="news-footer">
+                     <span class="span-news-footer">خبر نامه </span>
+                     <p class="p-news-footer">برای دریافت اخرین اخبار و آفر ها ایمیل خود را وارد کنید:</p>
+                     <form action="#" class="position-relative d-flex flex-row align-items-center">
+                        <input type="email" id="input-footer" class="input-email-footer"
+                           placeholder="لطفا ایمیل خود را وارد نمایید">
+                        <a href="#" class="btn-email-footer" label="input-footer">ثبت نام</a>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="end-footer">
+
+            <div class="end-footer-img d-flex">
+               <div class="container position-relative d-flex justify-content-center align-items-center">
+                  <span class="all-rights"> ©تمام حقوق برای وبسایت <a href="https://bartarpardakht.com/" class="bp-all-rights">برتر پرداخت</a> محفوظ
+                     میباشد</span>
+
+                  <div class="back-to-top">
+
+                  </div>
+                  <span class="span-back-top">بازگشت به بالا</span>
+               </div>
+
+
+            </div>
+         </div>
+      </div>
+   </footer>
+   <!-- /footer-bp -->
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+   <script src="./script/api.js"></script>
+   <script src="./script/script.js"></script>
+</body>
+
+</html>
