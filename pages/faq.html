@@ -1,0 +1,2007 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl" class="light">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="description" content="describe your website" />
+   <meta name="keywords" content="write keywords here" />
+   <meta name="author" content="name of author" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <meta name="color-scheme" content="light dark" />
+   <link rel="icon" type="image/png" href="../pictures/piche-logo.svg" />
+   <link rel="stylesheet" href="../Icon/fontawesome-free-6.0.0-web/fontawesome-free-6.0.0-web/css/all.min.css" />
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <link rel="stylesheet" href="../css/style.css" />
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <title>برتر پرداخت</title>
+</head>
+
+<body class="light">
+   <script>
+      const theme = localStorage.getItem('theme') || 'light';
+      document.body.className = theme;
+   </script>
+   <script>
+      $(document).ready(function () {
+         $("#faqInput").on("keyup", function () {
+            var value = $(this).val().toLowerCase();
+            $(".qu-acc-item ").filter(function () {
+               $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+         });
+      });
+   </script>
+   <!-- navbar -->
+   <nav class="container-fluid navbar">
+      <div class="container">
+         <div class="social-media-icon">
+            <div class="div-contain-navbar-icon d-flex justify-content-center align-items-center">
+               <a href="#" class="link-icon-navbar twitter"><img class="img-social-media"
+                     src="../pictures/Vectortwitter.png" alt="twitter icon"></a>
+               <a href="#" class="me-3 link-icon-navbar telegram"><img class="img-social-media"
+                     src="../pictures/Vectortelegram.png" alt="telegram icon"></a>
+               <a href="https://instagram.com/bartarpardakht/" class="me-3 link-icon-navbar instagram"><img
+                     class="img-social-media" src="../pictures/Vectorinsta.svg" alt="instagram icon"></a>
+               <a href="#" class="me-3 link-icon-navbar whatsapp"><img class="img-social-media"
+                     src="../pictures/in-footer.svg" alt="whatsapp icon"></a>
+            </div>
+         </div>
+         <div class="contact-icon d-flex">
+            <a href="mailto:mailto:info@bartarpardakht.com"
+               class="email-contact d-flex align-items-center justify-content-center ms-3">
+               <span class="span-email">
+                  info@bartarpardakht.com
+               </span>
+               <div class="big-div-icons-navbar me-1">
+                  <div class="div-second-img-icon-navbar-email">
+
+                  </div>
+               </div>
+            </a>
+            <a href="tel:02191014767" class="phone-contact d-flex align-items-center justify-content-center">
+               <span class="span-number-phone">
+                  021-91014767
+               </span>
+               <div class="big-div-icons-navbar me-1">
+                  <div class="div-second-img-icon-navbar-phone">
+
+                  </div>
+               </div>
+            </a>
+         </div>
+      </div>
+   </nav>
+   <!-- /navbar -->
+
+   <!-- navbar-2 -->
+   <nav class="container-fluid navbar-2">
+      <div class="container d-flex navbar-2-container align-items-center justify-content-between">
+         <div class="d-flex align-items-center">
+            <a href="https://bartarpardakht.com/" class="div-logo-img">
+               <img src="../pictures/logo.png" alt="logo bartar pardakht" width="100%">
+            </a>
+
+            <div class="me-5">
+               <ul class="position-relative m-0 d-flex align-items-center pe-0">
+                  <li class="text-white li-navbar-1 li-navbar">
+                     <a href="./digital-currency-page.html"
+                        class="div-mega-menu-navbar a-currency-page-navbar text-white">
+                        ارز دیجیتال
+                     </a>
+                  </li>
+                  <li class="text-white li-navbar li-navbar-2 me-5">
+                     <div class="div-mega-menu-navbar">
+                        خدمات ما
+                        <img src="../pictures/arrowdown.png" alt="arrowdown icon">
+                     </div>
+                     <ul class="position-absolute  ul-mega-menu-service">
+                        <li class="my-2"><a href="../pages/paypal.html">پی پال </a></li>
+                        <li class="my-2"><a href="../pages/internationalpayment.html">پرداخت بین المللی
+                           </a></li>
+                        <li class="my-2"><a href="../pages/perfectmoney.html">پرفکت مانی </a></li>
+                        <li class="my-2"> <a href="../pages/webmoney.html">وب مانی </a></li>
+                        <li class="my-2"><a href="../pages/giftcard.html">گیفت کارت</a></li>
+                     </ul>
+                  </li>
+                  <li class="text-white li-navbar  me-5">
+                     <a href="../pages/cashcurrency.html" class="a-navbar-2">نقد درآمد ارزی</a>
+                  </li>
+                  <li class="text-white li-navbar me-5">
+                     <a href="#" class="a-navbar-2">وبلاگ</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div class="d-flex justify-content-between align-items-center">
+            <div>
+               <a href="https://panel.bartarpardakht.com/login" class="btn-navbar-sign-in">ورود / ثبت نام</a>
+            </div>
+            <div id="theme-toggle" class="btn-toggle d-flex me-5 justify-content-between" onclick="toggledaynight()">
+               <div class="light-div-img">
+               </div>
+            </div>
+         </div>
+      </div>
+   </nav>
+   <!-- /navbar-2 -->
+
+   <!-- navbar-mobile -->
+   <nav class="container-fluid navbar-mobile">
+      <div class="container">
+         <div class="row justify-content-between align-items-center">
+            <div class="d-flex col-4">
+               <div class="sandwich-menu">
+                  <img src="../pictures/menu (1) 1.svg" alt="menu-in-mobile" width="100%">
+               </div>
+               <a href="https://bartarpardakht.com/" class="logo-navbar-phone me-3">
+                  <img src="../pictures/piche-logo.svg" alt="bp-logo-in-mobile" width="100%">
+               </a>
+            </div>
+            <div class="col-8 d-flex justify-content-end align-items-center">
+               <div id="theme-toggle-res" class="btn-toggle-phone d-flex ms-3 justify-content-end">
+                  <div class="light-div-res">
+
+                  </div>
+               </div>
+
+               <a href="https://panel.bartarpardakht.com/login" class="btn-navbar-sign-in-phone">ورود / ثبت نام</a>
+
+            </div>
+         </div>
+      </div>
+   </nav>
+
+
+   <div class="container-fluid res-menu-phone">
+      <div class="container py-0 mb-0">
+
+         <div class="img-logo-close-btn d-flex align-items-end justify-content-end">
+            <i class="fa fa-close text-white ms-3 close-res-menu"></i>
+         </div>
+         <ul class="ul-res-menu">
+            <li class="li-title-res-menu"><a href="./digital-currency-page.html" class="li-title-res-menu">ارز
+                  دیجیتال</a></li>
+            <div class="accordion" id="accordionExample">
+               <div class="accordion-item acc-item-nav-phone-services">
+                  <h2 class="accordion-header" id="headingTwo">
+                     <button class="accordion-button collapsed acc-btn-nav-phone-services" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                        aria-controls="collapseTwo">
+                        خدمات ما
+                     </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse b-d" aria-labelledby="headingTwo"
+                     data-bs-parent="#accordionExample">
+                     <div class="accordion-body acc-body-nav-phone-services">
+                        <ul class="ul-res-menu ul-res-menu-services-acc">
+                           <li class="pe-3 mt-3"><a href="../pages/paypal.html">پی پال</a></li>
+                           <li class="pe-3 mt-3"><a href="../pages/internationalpayment.html">پرداخت بین
+                                 المللی</a>
+                           </li>
+                           <li class="pe-3 mt-3"><a href="../pages/perfectmoney.html">پرفکت مانی</a></li>
+                           <li class="pe-3 mt-3"><a href="../pages/webmoney.html">وب مانی</a></li>
+                           <li class="pe-3 mt-3"><a href="../pages/giftcard.html">گیفت کارت</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <li class="li-title-res-menu mt-0"><a href="../pages/cashcurrency.html"
+                  class="li-title-res-menu">نقد درآمد ارزی</a></li>
+            <li class="li-title-res-menu"><a href="#" class="li-title-res-menu">وبلاگ</a>
+            </li>
+         </ul>
+      </div>
+   </div>
+   <!-- /navbar-mobile -->
+
+   <!-- header-faq  -->
+   <header class="container-fluid faq-header-container">
+      <div class="container">
+         <div class="faq-header row justify-content-between">
+            <div class="col-md-6 d-flex flex-column">
+               <span class="faq-header-title mt-4 mb-4">سوالات متداول</span>
+               <span class="faq-header-txt mb-5">نیاز به راهنمایی دارید؟ </span>
+               <input class="header-search-box" id="faqInput" type="text" placeholder="سوالات خود را جستجو کنید ...">
+            </div>
+            <div class="qu-pic-container col-md-4 d-flex align-items-center">
+               <div class="header-faq-pic">
+                  <img src="../pictures/faq/img.png" alt="question-pic" width="100%">
+               </div>
+
+            </div>
+         </div>
+      </div>
+   </header>
+
+   <!-- /header-faq  -->
+
+   <!-- question-section  -->
+   <div class="container-fluid mb-5">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-3">
+               <div class="qu-list-container">
+                  <div class="row p-0 nav flex-md-column" role="tablist">
+                     <div class="col-sm-4 col-md-12 nav-item"><span class="quFirstItem">دسته بندی</span></div>
+                     <div class="col-sm-4 col-md-12 nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#BP">برتر پرداخت</a>
+                     </div>
+                     <div class="col-sm-4 col-md-12 nav-item"><a class="nav-link" data-bs-toggle="tab" href="#paypal">پی پال</a></div>
+                     <div class="col-sm-4 col-md-12 nav-item"><a class="nav-link" data-bs-toggle="tab" href="#webmoney"> وب مانی </a></div>
+                     <div class="col-sm-4 col-md-12 nav-item"><a class="nav-link" data-bs-toggle="tab" href="#visa">ویزا و مستر کارت</a>
+                     </div>
+                     <div class="col-sm-4 col-md-12 nav-item"><a class="nav-link" data-bs-toggle="tab" href="#currencies">ارز های
+                           دیجیتال</a></div>
+                     <div class="col-sm-4 col-md-12 nav-item"><a class="nav-link" data-bs-toggle="tab" href="#perfect"> پرفکت مانی</a></div>
+                     <div class="col-sm-4 col-md-12 nav-item"><a class="nav-link" data-bs-toggle="tab" href="#gift">گیفت کارت ها</a></div>
+                     <div class="col-sm-4 col-md-12 nav-item"><a class="nav-link" data-bs-toggle="tab" href="#pyer">پایر</a></div>
+                     <div class="col-sm-4 col-md-12 nav-item"><a class="nav-link" data-bs-toggle="tab" href="#international">پرداخت های بین
+                           المللی</a></div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-9">
+               <div class="qu-content-container">
+                  <div class="qu-tab-title-container"><span>سوالات شما</span></div>
+                  <div id="qu-tab-content" class="tab-content qu-tab-content">
+                     <div id="BP" class="qu-tab-pane tab-pane active">
+                        <div class="accordion" id="quAccordion1">
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="BPacc-one">
+                                 <button id="qu-acc-btn" class="first-qu-btn qu-acc-btn accordion-button collapsed"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#BPacccollapseOne"
+                                    aria-expanded="false" aria-controls="BPacccollapseOne">
+                                    <span>
+                                       فرآیند احراز هویت حساب کاربری برای چیست؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="BPacccollapseOne" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="BPacc-one" data-bs-parent="#quAccordion1">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="BPacctwo">
+                                 <button class="qu-acc-btn accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#BPacccollapseTwo" aria-expanded="false"
+                                    aria-controls="BPacccollapseTwo">
+                                    <span>
+                                       چگونه می توانم سفارش خود را ثبت نمایم؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="BPacccollapseTwo" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="BPacctwo" data-bs-parent="#quAccordion1">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="BPaccthree">
+                                 <button class="qu-acc-btn accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#BPacccollapseThree" aria-expanded="false"
+                                    aria-controls="BPacccollapseThree">
+                                    <span>
+                                       مدت زمان انجام سفارش من در سایت چقدر است؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="BPacccollapseThree" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="BPaccthree" data-bs-parent="#quAccordion1">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="BPaccfour">
+                                 <button class="qu-acc-btn accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#BPacccollapseFour" aria-expanded="false"
+                                    aria-controls="BPacccollapseFour">
+                                    <span>
+                                       برای سفارشات اتوماتیک نیاز به تایید مدارک است ؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="BPacccollapseFour" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="BPaccfour" data-bs-parent="#quAccordion1">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="BPaccfive">
+                                 <button class="qu-acc-btn accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#BPacccollapseFive" aria-expanded="false"
+                                    aria-controls="BPacccollapseFive">
+                                    <span>
+                                       چه نوع ارزهای را به ریال تبدیل می کنید ؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="BPacccollapseFive" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="BPaccfive" data-bs-parent="#quAccordion1">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="BPaccsix">
+                                 <button class="qu-acc-btn accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#BPacccollapseSix" aria-expanded="false"
+                                    aria-controls="BPacccollapseSix">
+                                    <span>
+                                       برای تبدیل ارز به ریال نیاز به وریفای حساب می باشم ؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="BPacccollapseSix" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="BPaccsix" data-bs-parent="#quAccordion1">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="BPaccseven">
+                                 <button class="qu-acc-btn accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#BPacccollapseSeven" aria-expanded="false"
+                                    aria-controls="BPacccollapseSeven">
+                                    <span>
+                                       مدت اعتبار گیفت کارت ویزا و مستر چقدر است؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="BPacccollapseSeven" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="BPaccseven" data-bs-parent="#quAccordion1">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="paypal" class="qu-tab-pane tab-pane fade">
+                        <div class="accordion" id="quAccordion2">
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="paypalacc-one">
+                                 <button class="qu-acc-btn accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#paypalacccollapseOne" aria-expanded="false"
+                                    aria-controls="paypalacccollapseOne">
+                                    <span>
+                                       فرآیند احراز هویت حساب کاربری برای چیست؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="paypalacccollapseOne" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="paypalacc-one" data-bs-parent="#quAccordion2">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="paypalacctwo">
+                                 <button class="qu-acc-btn accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#paypalacccollapseTwo"
+                                    aria-expanded="false" aria-controls="paypalacccollapseTwo">
+                                    <span>
+                                       چگونه می توانم سفارش خود را ثبت نمایم؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="paypalacccollapseTwo" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="paypalacctwo" data-bs-parent="#quAccordion2">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="paypalaccthree">
+                                 <button class="qu-acc-btn accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#paypalacccollapseThree"
+                                    aria-expanded="false" aria-controls="paypalacccollapseThree">
+                                    <span>
+                                       مدت زمان انجام سفارش من در سایت چقدر است؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="paypalacccollapseThree" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="paypalaccthree" data-bs-parent="#quAccordion2">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="paypalaccfour">
+                                 <button class="qu-acc-btn accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#paypalacccollapseFour"
+                                    aria-expanded="false" aria-controls="paypalacccollapseFour">
+                                    <span>
+                                       برای سفارشات اتوماتیک نیاز به تایید مدارک است ؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="paypalacccollapseFour" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="paypalaccfour" data-bs-parent="#quAccordion2">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="paypalaccfive">
+                                 <button class="qu-acc-btn accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#paypalacccollapseFive"
+                                    aria-expanded="false" aria-controls="paypalacccollapseFive">
+                                    <span>
+                                       چه نوع ارزهای را به ریال تبدیل می کنید ؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="paypalacccollapseFive" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="paypalaccfive" data-bs-parent="#quAccordion2">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="paypalaccsix">
+                                 <button class="qu-acc-btn accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#paypalacccollapseSix"
+                                    aria-expanded="false" aria-controls="paypalacccollapseSix">
+                                    <span>
+                                       برای تبدیل ارز به ریال نیاز به وریفای حساب می باشم ؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="paypalacccollapseSix" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="paypalaccsix" data-bs-parent="#quAccordion2">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="paypalaccseven">
+                                 <button class="qu-acc-btn accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#paypalacccollapseSeven"
+                                    aria-expanded="false" aria-controls="paypalacccollapseSeven">
+                                    <span>
+                                       مدت اعتبار گیفت کارت ویزا و مستر چقدر است؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="paypalacccollapseSeven" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="paypalaccseven" data-bs-parent="#quAccordion2">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="webmoney" class="qu-tab-pane tab-pane fade">
+                        <div class="accordion" id="quAccordion3">
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="webacc-one">
+                                 <button class="qu-acc-btn accordion-button" type="button" data-bs-toggle="collapsed"
+                                    data-bs-target="#webacccollapseOne" aria-expanded="true"
+                                    aria-controls="webacccollapseOne">
+                                    <span>
+                                       فرآیند احراز هویت حساب کاربری برای چیست؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="webacccollapseOne" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="webacc-one" data-bs-parent="#quAccordion3">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="webacctwo">
+                                 <button class="qu-acc-btn accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#webacccollapseTwo" aria-expanded="false"
+                                    aria-controls="webacccollapseTwo">
+                                    <span>
+                                       چگونه می توانم سفارش خود را ثبت نمایم؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="webacccollapseTwo" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="webacctwo" data-bs-parent="#quAccordion3">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="webaccthree">
+                                 <button class="qu-acc-btn accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#webacccollapseThree"
+                                    aria-expanded="false" aria-controls="webacccollapseThree">
+                                    <span>
+                                       مدت زمان انجام سفارش من در سایت چقدر است؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="webacccollapseThree" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="webaccthree" data-bs-parent="#quAccordion3">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="webaccfour">
+                                 <button class="qu-acc-btn accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#webacccollapseFour" aria-expanded="false"
+                                    aria-controls="webacccollapseFour">
+                                    <span>
+                                       برای سفارشات اتوماتیک نیاز به تایید مدارک است ؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="webacccollapseFour" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="webaccfour" data-bs-parent="#quAccordion3">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="webaccfive">
+                                 <button class="qu-acc-btn accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#webacccollapseFive" aria-expanded="false"
+                                    aria-controls="webacccollapseFive">
+                                    <span>
+                                       چه نوع ارزهای را به ریال تبدیل می کنید ؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="webacccollapseFive" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="webaccfive" data-bs-parent="#quAccordion3">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="webaccsix">
+                                 <button class="qu-acc-btn accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#webacccollapseSix" aria-expanded="false"
+                                    aria-controls="webacccollapseSix">
+                                    <span>
+                                       برای تبدیل ارز به ریال نیاز به وریفای حساب می باشم ؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="webacccollapseSix" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="webaccsix" data-bs-parent="#quAccordion3">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="webaccseven">
+                                 <button class="qu-acc-btn accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#webacccollapseSeven"
+                                    aria-expanded="false" aria-controls="webacccollapseSeven">
+                                    <span>
+                                       مدت اعتبار گیفت کارت ویزا و مستر چقدر است؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="webacccollapseSeven" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="webaccseven" data-bs-parent="#quAccordion3">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="visa" class="qu-tab-pane tab-pane fade">
+                        <div class="accordion" id="quAccordion4">
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="visaacc-one">
+                                 <button class="qu-acc-btn accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#visaacccollapseOne" aria-expanded="true"
+                                    aria-controls="visaacccollapseOne">
+                                    <span>
+                                       فرآیند احراز هویت حساب کاربری برای چیست؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="visaacccollapseOne" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="visaacc-one" data-bs-parent="#quAccordion4">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="visaacctwo">
+                                 <button class="qu-acc-btn accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#visaacccollapseTwo" aria-expanded="false"
+                                    aria-controls="visaacccollapseTwo">
+                                    <span>
+                                       چگونه می توانم سفارش خود را ثبت نمایم؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="visaacccollapseTwo" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="visaacctwo" data-bs-parent="#quAccordion4">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="visaaccthree">
+                                 <button class="qu-acc-btn accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#visaacccollapseThree"
+                                    aria-expanded="false" aria-controls="visaacccollapseThree">
+                                    <span>
+                                       مدت زمان انجام سفارش من در سایت چقدر است؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="visaacccollapseThree" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="visaaccthree" data-bs-parent="#quAccordion4">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="visaaccfour">
+                                 <button class="qu-acc-btn accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#visaacccollapseFour"
+                                    aria-expanded="false" aria-controls="visaacccollapseFour">
+                                    <span>
+                                       برای سفارشات اتوماتیک نیاز به تایید مدارک است ؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="visaacccollapseFour" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="visaaccfour" data-bs-parent="#quAccordion4">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="visaaccfive">
+                                 <button class="qu-acc-btn accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#visaacccollapseFive"
+                                    aria-expanded="false" aria-controls="visaacccollapseFive">
+                                    <span>
+                                       چه نوع ارزهای را به ریال تبدیل می کنید ؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="visaacccollapseFive" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="visaaccfive" data-bs-parent="#quAccordion4">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="visaaccsix">
+                                 <button class="qu-acc-btn accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#visaacccollapseSix" aria-expanded="false"
+                                    aria-controls="visaacccollapseSix">
+                                    <span>
+                                       برای تبدیل ارز به ریال نیاز به وریفای حساب می باشم ؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="visaacccollapseSix" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="visaaccsix" data-bs-parent="#quAccordion4">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="visaaccseven">
+                                 <button class="qu-acc-btn accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#visaacccollapseSeven"
+                                    aria-expanded="false" aria-controls="visaacccollapseSeven">
+                                    <span>
+                                       مدت اعتبار گیفت کارت ویزا و مستر چقدر است؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="visaacccollapseSeven" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="visaaccseven" data-bs-parent="#quAccordion4">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="currencies" class="qu-tab-pane tab-pane fade">
+                        <div class="accordion" id="quAccordion5">
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="curracc-one">
+                                 <button class="qu-acc-btn accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#curracccollapseOne" aria-expanded="true"
+                                    aria-controls="curracccollapseOne">
+                                    <span>
+                                       فرآیند احراز هویت حساب کاربری برای چیست؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="curracccollapseOne" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="curracc-one" data-bs-parent="#quAccordion5">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="curracctwo">
+                                 <button class="qu-acc-btn accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#curracccollapseTwo" aria-expanded="false"
+                                    aria-controls="curracccollapseTwo">
+                                    <span>
+                                       چگونه می توانم سفارش خود را ثبت نمایم؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="curracccollapseTwo" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="curracctwo" data-bs-parent="#quAccordion5">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="curraccthree">
+                                 <button class="qu-acc-btn accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#curracccollapseThree"
+                                    aria-expanded="false" aria-controls="curracccollapseThree">
+                                    <span>
+                                       مدت زمان انجام سفارش من در سایت چقدر است؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="curracccollapseThree" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="curraccthree" data-bs-parent="#quAccordion5">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="curraccfour">
+                                 <button class="qu-acc-btn accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#curracccollapseFour"
+                                    aria-expanded="false" aria-controls="curracccollapseFour">
+                                    <span>
+                                       برای سفارشات اتوماتیک نیاز به تایید مدارک است ؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="curracccollapseFour" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="curraccfour" data-bs-parent="#quAccordion5">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="curraccfive">
+                                 <button class="qu-acc-btn accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#curracccollapseFive"
+                                    aria-expanded="false" aria-controls="curracccollapseFive">
+                                    <span>
+                                       چه نوع ارزهای را به ریال تبدیل می کنید ؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="curracccollapseFive" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="curraccfive" data-bs-parent="#quAccordion5">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="curraccsix">
+                                 <button class="qu-acc-btn accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#curracccollapseSix" aria-expanded="false"
+                                    aria-controls="curracccollapseSix">
+                                    <span>
+                                       برای تبدیل ارز به ریال نیاز به وریفای حساب می باشم ؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="curracccollapseSix" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="curraccsix" data-bs-parent="#quAccordion5">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="curraccseven">
+                                 <button class="qu-acc-btn accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#curracccollapseSeven"
+                                    aria-expanded="false" aria-controls="curracccollapseSeven">
+                                    <span>
+                                       مدت اعتبار گیفت کارت ویزا و مستر چقدر است؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="curracccollapseSeven" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="curraccseven" data-bs-parent="#quAccordion5">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="perfect" class="qu-tab-pane tab-pane fade">
+                        <div class="accordion" id="quAccordion6">
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="perfectacc-one">
+                                 <button class="qu-acc-btn accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#perfectacccollapseOne" aria-expanded="true"
+                                    aria-controls="perfectacccollapseOne">
+                                    <span>
+                                       فرآیند احراز هویت حساب کاربری برای چیست؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="perfectacccollapseOne" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="perfectacc-one" data-bs-parent="#quAccordion6">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="perfectacctwo">
+                                 <button class="qu-acc-btn accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#perfectacccollapseTwo"
+                                    aria-expanded="false" aria-controls="perfectacccollapseTwo">
+                                    <span>
+                                       چگونه می توانم سفارش خود را ثبت نمایم؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="perfectacccollapseTwo" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="perfectacctwo" data-bs-parent="#quAccordion6">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="perfectaccthree">
+                                 <button class="qu-acc-btn accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#perfectacccollapseThree"
+                                    aria-expanded="false" aria-controls="perfectacccollapseThree">
+                                    <span>
+                                       مدت زمان انجام سفارش من در سایت چقدر است؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="perfectacccollapseThree"
+                                 class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="perfectaccthree" data-bs-parent="#quAccordion6">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="perfectaccfour">
+                                 <button class="qu-acc-btn accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#perfectacccollapseFour"
+                                    aria-expanded="false" aria-controls="perfectacccollapseFour">
+                                    <span>
+                                       برای سفارشات اتوماتیک نیاز به تایید مدارک است ؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="perfectacccollapseFour" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="perfectaccfour" data-bs-parent="#quAccordion6">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="perfectaccfive">
+                                 <button class="qu-acc-btn accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#perfectacccollapseFive"
+                                    aria-expanded="false" aria-controls="perfectacccollapseFive">
+                                    <span>
+                                       چه نوع ارزهای را به ریال تبدیل می کنید ؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="perfectacccollapseFive" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="perfectaccfive" data-bs-parent="#quAccordion6">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="perfectaccsix">
+                                 <button class="qu-acc-btn accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#perfectacccollapseSix"
+                                    aria-expanded="false" aria-controls="perfectacccollapseSix">
+                                    <span>
+                                       برای تبدیل ارز به ریال نیاز به وریفای حساب می باشم ؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="perfectacccollapseSix" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="perfectaccsix" data-bs-parent="#quAccordion6">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="perfectaccseven">
+                                 <button class="qu-acc-btn accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#perfectacccollapseSeven"
+                                    aria-expanded="false" aria-controls="perfectacccollapseSeven">
+                                    <span>
+                                       مدت اعتبار گیفت کارت ویزا و مستر چقدر است؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="perfectacccollapseSeven"
+                                 class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="perfectaccseven" data-bs-parent="#quAccordion6">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="gift" class="qu-tab-pane tab-pane fade">
+                        <div class="accordion" id="quAccordion7">
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="giftacc-one">
+                                 <button class="qu-acc-btn accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#giftacccollapseOne" aria-expanded="true"
+                                    aria-controls="giftacccollapseOne">
+                                    <span>
+                                       فرآیند احراز هویت حساب کاربری برای چیست؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="giftacccollapseOne" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="giftacc-one" data-bs-parent="#quAccordion7">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="giftacctwo">
+                                 <button class="qu-acc-btn accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#giftacccollapseTwo" aria-expanded="false"
+                                    aria-controls="giftacccollapseTwo">
+                                    <span>
+                                       چگونه می توانم سفارش خود را ثبت نمایم؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="giftacccollapseTwo" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="giftacctwo" data-bs-parent="#quAccordion7">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="giftaccthree">
+                                 <button class="qu-acc-btn accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#giftacccollapseThree"
+                                    aria-expanded="false" aria-controls="giftacccollapseThree">
+                                    <span>
+                                       مدت زمان انجام سفارش من در سایت چقدر است؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="giftacccollapseThree" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="giftaccthree" data-bs-parent="#quAccordion7">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="giftaccfour">
+                                 <button class="qu-acc-btn accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#giftacccollapseFour"
+                                    aria-expanded="false" aria-controls="giftacccollapseFour">
+                                    <span>
+                                       برای سفارشات اتوماتیک نیاز به تایید مدارک است ؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="giftacccollapseFour" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="giftaccfour" data-bs-parent="#quAccordion7">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="giftaccfive">
+                                 <button class="qu-acc-btn accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#giftacccollapseFive"
+                                    aria-expanded="false" aria-controls="giftacccollapseFive">
+                                    <span>
+                                       چه نوع ارزهای را به ریال تبدیل می کنید ؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="giftacccollapseFive" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="giftaccfive" data-bs-parent="#quAccordion7">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="giftaccsix">
+                                 <button class="qu-acc-btn accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#giftacccollapseSix" aria-expanded="false"
+                                    aria-controls="giftacccollapseSix">
+                                    <span>
+                                       برای تبدیل ارز به ریال نیاز به وریفای حساب می باشم ؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="giftacccollapseSix" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="giftaccsix" data-bs-parent="#quAccordion7">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="giftaccseven">
+                                 <button class="qu-acc-btn accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#giftacccollapseSeven"
+                                    aria-expanded="false" aria-controls="giftacccollapseSeven">
+                                    <span>
+                                       مدت اعتبار گیفت کارت ویزا و مستر چقدر است؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="giftacccollapseSeven" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="giftaccseven" data-bs-parent="#quAccordion7">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="pyer" class="qu-tab-pane tab-pane fade">
+                        <div class="accordion" id="quAccordion8">
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="pyeracc-one">
+                                 <button class="qu-acc-btn accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#pyeracccollapseOne" aria-expanded="true"
+                                    aria-controls="pyeracccollapseOne">
+                                    <span>
+                                       فرآیند احراز هویت حساب کاربری برای چیست؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="pyeracccollapseOne" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="pyeracc-one" data-bs-parent="#quAccordion8">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="pyeracctwo">
+                                 <button class="qu-acc-btn accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#pyeracccollapseTwo" aria-expanded="false"
+                                    aria-controls="pyeracccollapseTwo">
+                                    <span>
+                                       چگونه می توانم سفارش خود را ثبت نمایم؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="pyeracccollapseTwo" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="pyeracctwo" data-bs-parent="#quAccordion8">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="pyeraccthree">
+                                 <button class="qu-acc-btn accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#pyeracccollapseThree"
+                                    aria-expanded="false" aria-controls="pyeracccollapseThree">
+                                    <span>
+                                       مدت زمان انجام سفارش من در سایت چقدر است؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="pyeracccollapseThree" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="pyeraccthree" data-bs-parent="#quAccordion8">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="pyeraccfour">
+                                 <button class="qu-acc-btn accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#pyeracccollapseFour"
+                                    aria-expanded="false" aria-controls="pyeracccollapseFour">
+                                    <span>
+                                       برای سفارشات اتوماتیک نیاز به تایید مدارک است ؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="pyeracccollapseFour" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="pyeraccfour" data-bs-parent="#quAccordion8">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="pyeraccfive">
+                                 <button class="qu-acc-btn accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#pyeracccollapseFive"
+                                    aria-expanded="false" aria-controls="pyeracccollapseFive">
+                                    <span>
+                                       چه نوع ارزهای را به ریال تبدیل می کنید ؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="pyeracccollapseFive" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="pyeraccfive" data-bs-parent="#quAccordion8">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="pyeraccsix">
+                                 <button class="qu-acc-btn accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#pyeracccollapseSix" aria-expanded="false"
+                                    aria-controls="pyeracccollapseSix">
+                                    <span>
+                                       برای تبدیل ارز به ریال نیاز به وریفای حساب می باشم ؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="pyeracccollapseSix" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="pyeraccsix" data-bs-parent="#quAccordion8">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="pyeraccseven">
+                                 <button class="qu-acc-btn accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#pyeracccollapseSeven"
+                                    aria-expanded="false" aria-controls="pyeracccollapseSeven">
+                                    <span>
+                                       مدت اعتبار گیفت کارت ویزا و مستر چقدر است؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="pyeracccollapseSeven" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="pyeraccseven" data-bs-parent="#quAccordion8">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="international" class="qu-tab-pane tab-pane fade">
+                        <div class="accordion" id="quAccordion9">
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="interacc-one">
+                                 <button class="qu-acc-btn accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#interacccollapseOne" aria-expanded="true"
+                                    aria-controls="interacccollapseOne">
+                                    <span>
+                                       فرآیند احراز هویت حساب کاربری برای چیست؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="interacccollapseOne" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="interacc-one" data-bs-parent="#quAccordion9">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="interacctwo">
+                                 <button class="qu-acc-btn accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#interacccollapseTwo"
+                                    aria-expanded="false" aria-controls="interacccollapseTwo">
+                                    <span>
+                                       چگونه می توانم سفارش خود را ثبت نمایم؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="interacccollapseTwo" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="interacctwo" data-bs-parent="#quAccordion9">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="interaccthree">
+                                 <button class="qu-acc-btn accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#interacccollapseThree"
+                                    aria-expanded="false" aria-controls="interacccollapseThree">
+                                    <span>
+                                       مدت زمان انجام سفارش من در سایت چقدر است؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="interacccollapseThree" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="interaccthree" data-bs-parent="#quAccordion9">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="interaccfour">
+                                 <button class="qu-acc-btn accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#interacccollapseFour"
+                                    aria-expanded="false" aria-controls="interacccollapseFour">
+                                    <span>
+                                       برای سفارشات اتوماتیک نیاز به تایید مدارک است ؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="interacccollapseFour" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="interaccfour" data-bs-parent="#quAccordion9">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="interaccfive">
+                                 <button class="qu-acc-btn accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#interacccollapseFive"
+                                    aria-expanded="false" aria-controls="interacccollapseFive">
+                                    <span>
+                                       چه نوع ارزهای را به ریال تبدیل می کنید ؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="interacccollapseFive" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="interaccfive" data-bs-parent="#quAccordion9">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="interaccsix">
+                                 <button class="qu-acc-btn accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#interacccollapseSix"
+                                    aria-expanded="false" aria-controls="interacccollapseSix">
+                                    <span>
+                                       برای تبدیل ارز به ریال نیاز به وریفای حساب می باشم ؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="interacccollapseSix" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="interaccsix" data-bs-parent="#quAccordion9">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="qu-acc-item accordion-item">
+                              <h2 class="faq-accordion-header accordion-header" id="interaccseven">
+                                 <button class="last-qu-btn qu-acc-btn accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#interacccollapseSeven"
+                                    aria-expanded="false" aria-controls="interacccollapseSeven">
+                                    <span>
+                                       مدت اعتبار گیفت کارت ویزا و مستر چقدر است؟
+                                    </span>
+                                 </button>
+                              </h2>
+                              <div id="interacccollapseSeven" class="qu-accordion-collapse accordion-collapse collapse"
+                                 aria-labelledby="interaccseven" data-bs-parent="#quAccordion9">
+                                 <div class="accordion-body">
+                                    <p class="qu-accordion-txt">
+                                       لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و دنیای موجود طراحی
+                                       اساسا مورد استفاده قرار گیرد
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- question-section  -->
+
+  
+   <!-- footer-bp -->
+   <footer class="container-fluid">
+      <div class="logo-footer-container">
+         <div class="logo-footer box-logo-footer">
+            <img src="../pictures/piche-logo.svg" alt="logo-footer" width="100%">
+         </div>
+      </div>
+      <div class="footer-container-fluid container">
+         <div class="row social-links-container d-flex align-items-center justify-content-evenly py-4">
+            <div class="col-sm-5 links-footer d-flex align-items-center ">
+               <a href="https//bartarpardakht.com/" class="home-footer-link single-footer-link">خانه</a>
+               <a href="https://bartarpardakht.com/blog/" class="single-footer-link">وبلاگ</a>
+               <a href="./contact.html" class="single-footer-link">تماس با ما</a>
+               <a href="https://bartarpardakht.com/terms-of-service" class="single-footer-link">قوانین مقررات</a>
+               <a href="./faq.html" class="single-footer-link">سوالات متداول</a>
+            </div>
+
+            <div class="col-sm-5 social-media ms-4 d-flex align-items-center">
+               <a href="#" class="social-media-icon-footer telegram-footer-con">
+                  <div class="telegram-footer"></div>
+               </a>
+               <a href="https://instagram.com/bartarpardakht/" class="social-media-icon-footer">
+                  <div class="instagram-footer social-single-icons"></div>
+               </a>
+               <a href="#" class="social-media-icon-footer">
+                  <div class="twitter-footer"></div>
+               </a>
+               <a href="#" class="social-media-icon-footer">
+                  <div class="linkedin-footer social-single-icons"></div>
+               </a>
+               <a href="#" class="social-media-icon-footer">
+                  <div class="facebook-footer"></div>
+               </a>
+            </div>
+         </div>
+      </div>
+      <div class="container-middle-footer container-fluid py-5 position-relative">
+         <div class="container mb-3 pb-5">
+            <div class="row">
+               <div class="col-xl-3 ps-xl-4">
+                  <div class="col par-footer-1">
+                     <span class="span-about-us-footer">درباره ما</span>
+                     <p class="p-about-us-footer">برتر پرداخت با همکاری تیمی متشکل از متخصصین وطن عزیزمان ایران با
+                        عبور
+                        از فراز و نشیب های فراوان
+                        ،
+                        بستری امن و سریع را برای پرداخت های بین المللی شما عزیزان فراهم اورده اند . امیدواریم بتوانیم
+                        در
+                        این راه قدمی کوچک در جهت آسودگی خاطر شما عزیزان برداریم.</p>
+                  </div>
+                  <div class="par-footer-2">
+                     <a href="https://bartarpardakht.com/terms-of-service" class="par-footer-2-container">
+                        <div class="col-2 footer-coin-img">
+                           <img src="../pictures/law-logo.png" alt="footer-coin-image" width="100%">
+                        </div>
+                        <div class="col-10 pe-3">
+                           <span class="span-why-buy-bit-footer">قوانین و مقررات خدمات </span>
+                           <p class="p-why-buy-bit-footer">قوانین و مقررات برترپرداخت براساس ماده ۱۰ قانون مدنی، و با
+                              تابعیت از کلیه قوانین و مقررات ...
+
+
+                           </p>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+               <div class="col-xl-6 footer-links">
+                  <div class="footer-links-container row">
+                     <div class="col-4 p-0">
+                        <span class="span-footer-links">خدمات ما</span>
+                        <a href="./paypal.html"
+                           class="d-flex justify-content-between test align-items-center py-3">
+                           <span>پی پال</span>
+                           <div class="ms-3">
+                              <img src="../pictures/arrow.svg" class="arrow-left-yellow" alt="arrow-left-yellow"
+                                 width="100%">
+                              <img src="../pictures/svg/Vector-arrow-left.svg" class="arrow-left-gray" width="100%"
+                                 alt="arrow-left-gray">
+                           </div>
+                        </a>
+                        <a href="./webmoney.html"
+                           class="d-flex justify-content-between test align-items-center py-3">
+                           <span>وب مانی</span>
+                           <div class="ms-3">
+                              <img src="../pictures/arrow.svg" class="arrow-left-yellow" alt="arrow-left-yellow"
+                                 width="100%">
+                              <img src="../pictures/svg/Vector-arrow-left.svg" class="arrow-left-gray" width="100%"
+                                 alt="arrow-left-gray">
+                           </div>
+                        </a>
+                        <a href="./perfectmoney.html"
+                           class="d-flex justify-content-between test align-items-center py-3">
+                           <span> پرفکت مانی</span>
+                           <div class="ms-3">
+                              <img src="../pictures/arrow.svg" class="arrow-left-yellow" alt="arrow-left-yellow"
+                                 width="100%">
+                              <img src="../pictures/svg/Vector-arrow-left.svg" class="arrow-left-gray" width="100%"
+                                 alt="arrow-left-gray">
+                           </div>
+                        </a>
+                        <a href="./digital-currency-page.html"
+                           class="d-flex justify-content-between test align-items-center py-3">
+                           <span> ارز دیجیتال</span>
+                           <div class="ms-3">
+                              <img src="../pictures/arrow.svg" class="arrow-left-yellow" alt="arrow-left-yellow"
+                                 width="100%">
+                              <img src="../pictures/svg/Vector-arrow-left.svg" class="arrow-left-gray" width="100%"
+                                 alt="arrow-left-gray">
+                           </div>
+                        </a>
+                        <a href="./visamaster.html"
+                           class="d-flex justify-content-between test align-items-center py-3">
+                           <span> ویزا و مستر</span>
+                           <div class="ms-3">
+                              <img src="../pictures/arrow.svg" class="arrow-left-yellow" alt="arrow-left-yellow"
+                                 width="100%">
+                              <img src="../pictures/svg/Vector-arrow-left.svg" class="arrow-left-gray" width="100%"
+                                 alt="arrow-left-gray">
+                           </div>
+                        </a>
+                        <a href="./cashcurrency.html"
+                           class="d-flex justify-content-between test align-items-center py-3">
+                           <span>نقد درآمد ارزی </span>
+                           <div class="ms-3">
+                              <img src="../pictures/arrow.svg" class="arrow-left-yellow" alt="arrow-left-yellow"
+                                 width="100%">
+                              <img src="../pictures/svg/Vector-arrow-left.svg" class="arrow-left-gray" width="100%"
+                                 alt="arrow-left-gray">
+                           </div>
+                        </a>
+                     </div>
+                     <div class="col-4 p-0">
+                        <span class="span-footer-links"> ارز دیجیتال</span>
+                        <a href="https://panel.bartarpardakht.com/login"
+                           class="d-flex justify-content-between test align-items-center py-3">
+                           <span> خرید بیت کوین</span>
+                           <div class="ms-3">
+                              <img src="../pictures/arrow.svg" class="arrow-left-yellow" alt="arrow-left-yellow"
+                                 width="100%">
+                              <img src="../pictures/svg/Vector-arrow-left.svg" class="arrow-left-gray" width="100%"
+                                 alt="arrow-left-gray">
+                           </div>
+                        </a>
+                        <a href="https://panel.bartarpardakht.com/login"
+                           class="d-flex justify-content-between test align-items-center py-3">
+                           <span> خرید اتریوم</span>
+                           <div class="ms-3">
+                              <img src="../pictures/arrow.svg" class="arrow-left-yellow" alt="arrow-left-yellow"
+                                 width="100%">
+                              <img src="../pictures/svg/Vector-arrow-left.svg" class="arrow-left-gray" width="100%"
+                                 alt="arrow-left-gray">
+                           </div>
+                        </a>
+                        <a href="https://panel.bartarpardakht.com/login"
+                           class="d-flex justify-content-between test align-items-center py-3">
+                           <span> خرید تتر</span>
+                           <div class="ms-3">
+                              <img src="../pictures/arrow.svg" class="arrow-left-yellow" alt="arrow-left-yellow"
+                                 width="100%">
+                              <img src="../pictures/svg/Vector-arrow-left.svg" class="arrow-left-gray" width="100%"
+                                 alt="arrow-left-gray">
+                           </div>
+                        </a>
+                        <a href="https://panel.bartarpardakht.com/login"
+                           class="d-flex justify-content-between test align-items-center py-3">
+                           <span> خرید شیبا</span>
+                           <div class="ms-3">
+                              <img src="../pictures/arrow.svg" class="arrow-left-yellow" alt="arrow-left-yellow"
+                                 width="100%">
+                              <img src="../pictures/svg/Vector-arrow-left.svg" class="arrow-left-gray" width="100%"
+                                 alt="arrow-left-gray">
+                           </div>
+                        </a>
+                        <a href="https://panel.bartarpardakht.com/login"
+                           class="d-flex justify-content-between test align-items-center py-3">
+                           <span> خرید ریپل</span>
+                           <div class="ms-3">
+                              <img src="../pictures/arrow.svg" class="arrow-left-yellow" alt="arrow-left-yellow"
+                                 width="100%">
+                              <img src="../pictures/svg/Vector-arrow-left.svg" class="arrow-left-gray" width="100%"
+                                 alt="arrow-left-gray">
+                           </div>
+                        </a>
+                        <a href="https://panel.bartarpardakht.com/login"
+                           class="d-flex justify-content-between test align-items-center py-3">
+                           <span> خرید سولانا</span>
+                           <div class="ms-3">
+                              <img src="../pictures/arrow.svg" class="arrow-left-yellow" alt="arrow-left-yellow"
+                                 width="100%">
+                              <img src="../pictures/svg/Vector-arrow-left.svg" class="arrow-left-gray" width="100%"
+                                 alt="arrow-left-gray">
+                           </div>
+                        </a>
+                     </div>
+                     <div class="col-4 p-0">
+                        <span class="span-footer-links"> خرید انواع گیفت کارت</span>
+                        <a href="https://panel.bartarpardakht.com/login"
+                           class="d-flex justify-content-between test align-items-center py-3">
+                           <span>گیفت کارت آمازون</span>
+                           <div>
+                              <img src="../pictures/arrow.svg" class="arrow-left-yellow" alt="arrow-left-yellow"
+                                 width="100%">
+                              <img src="../pictures/svg/Vector-arrow-left.svg" class="arrow-left-gray" width="100%"
+                                 alt="arrow-left-gray">
+                           </div>
+                        </a>
+                        <a href="https://panel.bartarpardakht.com/login"
+                           class="d-flex justify-content-between test align-items-center py-3">
+                           <span>گیفت کارت پلی استیشن </span>
+                           <div>
+                              <img src="../pictures/arrow.svg" class="arrow-left-yellow" alt="arrow-left-yellow"
+                                 width="100%">
+                              <img src="../pictures/svg/Vector-arrow-left.svg" class="arrow-left-gray" width="100%"
+                                 alt="arrow-left-gray">
+                           </div>
+                        </a>
+                        <a href="https://panel.bartarpardakht.com/login"
+                           class="d-flex justify-content-between test align-items-center py-3">
+                           <span>گیفت کارت ایکس باکس </span>
+                           <div>
+                              <img src="../pictures/arrow.svg" class="arrow-left-yellow" alt="arrow-left-yellow"
+                                 width="100%">
+                              <img src="../pictures/svg/Vector-arrow-left.svg" class="arrow-left-gray" width="100%"
+                                 alt="arrow-left-gray">
+                           </div>
+                        </a>
+                        <a href="https://panel.bartarpardakht.com/login"
+                           class="d-flex justify-content-between test align-items-center py-3">
+                           <span> گیفت کارت آیتیونز</span>
+                           <div>
+                              <img src="../pictures/arrow.svg" class="arrow-left-yellow" alt="arrow-left-yellow"
+                                 width="100%">
+                              <img src="../pictures/svg/Vector-arrow-left.svg" class="arrow-left-gray" width="100%"
+                                 alt="arrow-left-gray">
+                           </div>
+                        </a>
+                        <a href="https://panel.bartarpardakht.com/login"
+                           class="d-flex justify-content-between test align-items-center py-3">
+                           <span>گیفت کارت گوگل پلی </span>
+                           <div>
+                              <img src="../pictures/arrow.svg" class="arrow-left-yellow" alt="arrow-left-yellow"
+                                 width="100%">
+                              <img src="../pictures/svg/Vector-arrow-left.svg" class="arrow-left-gray" width="100%"
+                                 alt="arrow-left-gray">
+                           </div>
+                        </a>
+                        <a href="https://panel.bartarpardakht.com/login"
+                           class="d-flex justify-content-between test align-items-center py-3">
+                           <span> گیفت کارت اسپاتیفای</span>
+                           <div>
+                              <img src="../pictures/arrow.svg" class="arrow-left-yellow" alt="arrow-left-yellow"
+                                 width="100%">
+                              <img src="../pictures/svg/Vector-arrow-left.svg" class="arrow-left-gray" width="100%"
+                                 alt="arrow-left-gray">
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+                  <div class="footer-accordion accordion" id="footerAccordionId">
+                     <div class="footer-accordioan-item accordion-item">
+                        <h2 id="headingOne">
+                           <button class="accordion-footer-btn accordion-button collapsed" type="button"
+                              data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
+                              aria-controls="collapseOne">
+                              خدمات ما
+                           </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                           data-bs-parent="#footerAccordionId">
+                           <div class="footer-accordion-body accordion-body">
+                              <ul class="footer-accordion-body-list pe-0">
+                                 <li>
+                                    <a href="./paypal.html" class="footer-accordion-list-item"> پی
+                                       پال </a>
+                                 </li>
+                                 <li>
+                                    <a href="./webmoney.html" class="footer-accordion-list-item"> وب
+                                       مانی</a>
+                                 </li>
+                                 <li>
+                                    <a href="./perfectmoney.html"
+                                       class="footer-accordion-list-item"> پرفکت مانی</a>
+                                 </li>
+                                 <li>
+                                    <a href="./digital-currency-page.html"
+                                       class="footer-accordion-list-item"> ارز دیجیتال</a>
+                                 </li>
+                                 <li>
+                                    <a href="./visamaster.html" class="footer-accordion-list-item">
+                                       ویزا مستر</a>
+                                 </li>
+                                 <li>
+                                    <a href="./cashcurrency.html"
+                                       class="footer-accordion-list-item"> نقد درآمد ارزی</a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="footer-accordioan-item accordion-item">
+                        <h2 id="headingTwo">
+                           <button class="accordion-footer-btn accordion-button collapsed" type="button"
+                              data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                              aria-controls="collapseTwo">
+                              ارز دیجیتال
+                           </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                           data-bs-parent="#footerAccordionId">
+                           <div class="footer-accordion-body accordion-body">
+                              <ul class="footer-accordion-body-list pe-0">
+                                 <li>
+                                    <a href="https://panel.bartarpardakht.com/login" class="footer-accordion-list-item">
+                                       خرید بیت کوین</a>
+                                 </li>
+                                 <li>
+                                    <a href="https://panel.bartarpardakht.com/login" class="footer-accordion-list-item">
+                                       خرید اتریوم</a>
+                                 </li>
+                                 <li>
+                                    <a href="https://panel.bartarpardakht.com/login" class="footer-accordion-list-item">
+                                       خرید تتر</a>
+                                 </li>
+                                 <li>
+                                    <a href="https://panel.bartarpardakht.com/login" class="footer-accordion-list-item">
+                                       خرید شیبا</a>
+                                 </li>
+                                 <li>
+                                    <a href="https://panel.bartarpardakht.com/login" class="footer-accordion-list-item">
+                                       خرید ریپل</a>
+                                 </li>
+                                 <li>
+                                    <a href="https://panel.bartarpardakht.com/login" class="footer-accordion-list-item">
+                                       خرید سولانا</a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="footer-accordioan-item accordion-item">
+                        <h2 id="headingThree">
+                           <button class="accordion-footer-btn accordion-button collapsed" type="button"
+                              data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                              aria-controls="collapseThree">
+                              خرید انواع گیفت کارت
+                           </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                           data-bs-parent="#footerAccordionId">
+                           <div class="footer-accordion-body accordion-body">
+                              <ul class="footer-accordion-body-list pe-0">
+                                 <li>
+                                    <a href="https://panel.bartarpardakht.com/login" class="footer-accordion-list-item">
+                                       گیفت کارت آمازون</a>
+                                 </li>
+                                 <li>
+                                    <a href="https://panel.bartarpardakht.com/login" class="footer-accordion-list-item">
+                                       گیفت کارت پلی استیشن</a>
+                                 </li>
+                                 <li>
+                                    <a href="https://panel.bartarpardakht.com/login" class="footer-accordion-list-item">
+                                       گیفت کارت ایکس باکس</a>
+                                 </li>
+                                 <li>
+                                    <a href="https://panel.bartarpardakht.com/login" class="footer-accordion-list-item">
+                                       گیفت کارت آیتیونز</a>
+                                 </li>
+                                 <li>
+                                    <a href="https://panel.bartarpardakht.com/login" class="footer-accordion-list-item">
+                                       گیفت کارت گوگل پلی</a>
+                                 </li>
+                                 <li>
+                                    <a href="https://panel.bartarpardakht.com/login" class="footer-accordion-list-item">
+                                       گیفت کارت اسپاتیفای</a>
+                                 </li>
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-xl-3 footer-contact">
+                  <div class="div-contact-footer-part1">
+                     <div>
+                        <span class="m-0 span-contact-us-footer span-footer-links">
+                           ارتباط با ما
+                        </span>
+                     </div>
+                     <div class="d-flex my-3 align-items-center">
+                        <div class="address-footer-icon">
+                        </div>
+                        <span class="pe-3 span-addres-footer">شیراز،معالی آباد،ساختمان یونیک،دفتر مرکزی برتر
+                           پرداخت</span>
+                     </div>
+                     <div class="d-flex my-3 align-items-center">
+                        <div class="email-footer-icon">
+                        </div>
+                        <div>
+
+                           <a href="mailto:mailto:info@bartarpardakht.com" class="pe-3 email-footer">info@bartarpardakht.com</a>
+                        </div>
+                     </div>
+
+                     <div class="d-flex my-3 align-items-center">
+                        <div class="tel-footer-icon">
+                        </div>
+                        <span class="pe-3 number-phone-footer">021-91014767 </span>
+                     </div>
+                  </div>
+                  <div class="news-footer">
+                     <span class="span-news-footer">خبر نامه </span>
+                     <p class="p-news-footer">برای دریافت اخرین اخبار و آفر ها ایمیل خود را وارد کنید:</p>
+                     <form action="#" class="position-relative d-flex flex-row align-items-center">
+                        <input type="email" id="input-footer" class="input-email-footer"
+                           placeholder="لطفا ایمیل خود را وارد نمایید">
+                        <a href="#" class="btn-email-footer" label="input-footer">ثبت نام</a>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="end-footer">
+
+            <div class="end-footer-img d-flex">
+               <div class="container position-relative d-flex justify-content-center align-items-center">
+                  <span class="all-rights"> ©تمام حقوق برای وبسایت <a href="https://bartarpardakht.com/" class="bp-all-rights">برتر پرداخت</a> محفوظ
+                     میباشد</span>
+
+                  <div class="back-to-top">
+
+                  </div>
+                  <span class="span-back-top">بازگشت به بالا</span>
+               </div>
+
+
+            </div>
+         </div>
+      </div>
+   </footer>
+   <!-- /footer-bp -->
+
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+   </script>
+
+   <script src="../script/script.js"></script>
+</body>
+
+</html>
